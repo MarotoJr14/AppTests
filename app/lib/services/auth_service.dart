@@ -40,16 +40,9 @@ class AuthService {
       throw const AuthException('Debes completar correo, contraseña y código.');
     }
 
-    // Best-effort: if email already exists, fail early (and do not count as code attempt).
-    // This may return an empty list depending on Firebase settings (email enumeration protection).
-    try {
-      final methods = await _auth.fetchSignInMethodsForEmail(emailNorm);
-      if (methods.isNotEmpty) {
-        throw const AuthException('Ya existe una cuenta con ese correo.');
-      }
-    } catch (_) {
-      // Ignore and continue (fallback to FirebaseAuthException email-already-in-use later).
-    }
+    // NOTA: Se eliminó la comprobación con `fetchSignInMethodsForEmail()` porque está deprecada
+    // y puede permitir enumeración de correos. Confiamos en que `createUserWithEmailAndPassword`
+    // lanzará `email-already-in-use` si aplica (no se cuenta como intento de código).
 
     await _reserveRegistrationCode(emailNorm: emailNorm, codeNorm: codeNorm);
 
