@@ -3,14 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // ── Palette ──────────────────────────────────────────────────────────────
-  static const Color navy        = Color(0xFF0A1628);
-  static const Color navyLight   = Color(0xFF132240);
-  static const Color ocean       = Color(0xFF1A4B8C);
-  static const Color oceanLight  = Color(0xFF2E6BC4);
+  static const Color navy        = Color(0xFF0B3144);
+  static const Color navyLight   = Color(0xFF0D3D54);
+  static const Color ocean       = Color(0xFF0E749C);
+  static const Color oceanLight  = Color(0xFF1A8DBB);
   static const Color gold        = Color(0xFFE8B84B);
   static const Color goldLight   = Color(0xFFF5D07A);
-  static const Color surface     = Color(0xFF0F1F38);
-  static const Color surfaceCard = Color(0xFF162942);
+  static const Color surface     = Color(0xFF092A3A);
+  static const Color surfaceCard = Color(0xFF0C3549);
   static const Color onSurface   = Color(0xFFE8EEF7);
   static const Color onSurfaceSub= Color(0xFF8AA3C8);
   static const Color correct     = Color(0xFF2ECC71);

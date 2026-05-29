@@ -153,6 +153,15 @@ const sampleQuestions = [
 ];
 
 // ── Seed function ─────────────────────────────────────────────────────────
+// Registration codes (new users)
+// Collection: registrationCodes
+// Doc id: code (string)
+const registrationCodes = [
+  { code: 'BS-0001', available: true, assignedEmail: 'alumno1@example.com', usedAt: null, reservedForEmail: null, reservedUntil: null },
+  { code: 'BS-0002', available: true, assignedEmail: 'alumno2@example.com', usedAt: null, reservedForEmail: null, reservedUntil: null },
+  { code: 'BS-0003', available: true, assignedEmail: null,                 usedAt: null, reservedForEmail: null, reservedUntil: null },
+];
+
 async function seed() {
   console.log('Seeding topics...');
   const topicBatch = db.batch();
@@ -171,6 +180,21 @@ async function seed() {
   }
   await qBatch.commit();
   console.log(`✓ ${sampleQuestions.length} sample questions written`);
+
+  console.log('Seeding registration codes...');
+  const cBatch = db.batch();
+  for (const c of registrationCodes) {
+    const code = String(c.code).trim().toUpperCase();
+    const ref = db.collection('registrationCodes').doc(code);
+    cBatch.set(ref, {
+      ...c,
+      code,
+      assignedEmail: c.assignedEmail ? String(c.assignedEmail).trim().toLowerCase() : null,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  }
+  await cBatch.commit();
+  console.log(`âœ“ ${registrationCodes.length} registration codes written`);
 
   console.log('\nDone! Add more questions following the same structure.');
   process.exit(0);

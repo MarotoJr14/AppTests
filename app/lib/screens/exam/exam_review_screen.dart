@@ -39,7 +39,7 @@ class _ExamReviewScreenState extends State<ExamReviewScreen> {
       builder: (ctx) => AlertDialog(
         backgroundColor: AppTheme.surfaceCard,
         shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         title: Text(widget.exam.name,
             style: Theme.of(context).textTheme.displayMedium),
         content: Column(
@@ -60,8 +60,8 @@ class _ExamReviewScreenState extends State<ExamReviewScreen> {
             Text(
               '$pct%  —  ${passed ? "APROBADO 🎉" : "NO APROBADO"}',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: passed ? AppTheme.correct : AppTheme.incorrect,
-                  ),
+                color: passed ? AppTheme.correct : AppTheme.incorrect,
+              ),
               textAlign: TextAlign.center,
             ),
           ],

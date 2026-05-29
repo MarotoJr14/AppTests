@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../models/question.dart';
-import '../../services/exam_service.dart';
+import '../../models/user_question_result.dart';
+import '../../services/stats_service.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/battery_nav_bar.dart';
 import '../../widgets/question_card.dart';
 import 'review_screen.dart';
 
-/// A free-practice battery (topic or random).
-/// Tracks answers, updates stats on finish, then opens review.
+/// Free-practice battery (topic or random).
+/// Loads ALL questions (unanswered first). No automatic end — only "Terminar".
+/// On finish, saves the last answer per question to userQuestionResults.
 class PracticeBatteryScreen extends StatefulWidget {
   final String title;
   final List<Question> questions;
-  final String? topicId;     // null = random (mixed topics)
-  final String? topicName;
 
   const PracticeBatteryScreen({
     super.key,
     required this.title,
     required this.questions,
-    this.topicId,
-    this.topicName,
   });
 
   @override
@@ -29,7 +27,7 @@ class PracticeBatteryScreen extends StatefulWidget {
 
 class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
   int _current = 0;
-  final Map<int, String> _selected = {};   // index → answerId
+  final Map<int, String> _selected = {};
   bool _finishing = false;
 
   Question get _q => widget.questions[_current];
@@ -44,33 +42,28 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
 
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid != null) {
-      // Build per-topic stats delta
-      final Map<String, _TopicDelta> deltas = {};
+      // Build per-question result records (only for answered questions)
+      final results = <UserQuestionResult>[];
       for (int i = 0; i < widget.questions.length; i++) {
+        final selectedId = _selected[i];
+        if (selectedId == null) continue; // skipped — don't save
         final q = widget.questions[i];
-        final tid = q.topicId;
-        final tname = q.topicName;
-        deltas.putIfAbsent(tid, () => _TopicDelta(tid, tname));
-        deltas[tid]!.answered++;
-        if (_selected[i] == q.correctAnswerId) deltas[tid]!.correct++;
-      }
-      final svc = ExamService();
-      for (final d in deltas.values) {
-        await svc.updateStatsForPractice(
+        results.add(UserQuestionResult(
           userId: uid,
-          topicId: d.topicId,
-          topicName: d.topicName,
-          answered: d.answered,
-          correct: d.correct,
-        );
+          questionId: q.id,
+          topicId: q.topicId,
+          topicName: q.topicName,
+          isCorrect: selectedId == q.correctAnswerId,
+          answeredAt: DateTime.now(),
+        ));
       }
+      await StatsService().saveQuestionResults(results);
     }
 
     if (mounted) {
-      // Build review entries using public ReviewEntry
       final entries = List<ReviewEntry>.generate(
         widget.questions.length,
-        (i) => ReviewEntry(
+            (i) => ReviewEntry(
           statement: widget.questions[i].statement,
           answers: widget.questions[i].answers,
           correctAnswerId: widget.questions[i].correctAnswerId,
@@ -80,10 +73,7 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
       );
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => ReviewScreen(
-            title: widget.title,
-            entries: entries,
-          ),
+          builder: (_) => ReviewScreen(title: widget.title, entries: entries),
         ),
       );
     }
@@ -96,7 +86,6 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
       appBar: AppBar(title: Text(widget.title)),
       body: Column(
         children: [
-          // Progress indicator
           LinearProgressIndicator(
             value: (_current + 1) / widget.questions.length,
             backgroundColor: AppTheme.surfaceCard,
@@ -109,26 +98,19 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Topic label
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 12, vertical: 6),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       color: AppTheme.ocean.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                          color: AppTheme.ocean.withOpacity(0.5)),
+                      border: Border.all(color: AppTheme.ocean.withOpacity(0.5)),
                     ),
                     child: Text(
                       q.topicName,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyMedium
-                          ?.copyWith(color: AppTheme.onSurface),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppTheme.onSurface),
                     ),
                   ),
                   const SizedBox(height: 12),
-                  // Counter
                   Text(
                     'Pregunta ${_current + 1} / ${widget.questions.length}',
                     style: Theme.of(context).textTheme.bodyMedium,
@@ -147,9 +129,7 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
             ),
           ),
           BatteryNavBar(
-            onPrevious: _current > 0
-                ? () => setState(() => _current--)
-                : null,
+            onPrevious: _current > 0 ? () => setState(() => _current--) : null,
             onFinish: _finishing ? null : _finish,
             onNext: _current < widget.questions.length - 1
                 ? () => setState(() => _current++)
@@ -159,12 +139,4 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
       ),
     );
   }
-}
-
-class _TopicDelta {
-  final String topicId;
-  final String topicName;
-  int answered = 0;
-  int correct = 0;
-  _TopicDelta(this.topicId, this.topicName);
 }

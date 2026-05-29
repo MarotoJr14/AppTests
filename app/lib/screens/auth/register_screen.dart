@@ -1,23 +1,23 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import '../../services/auth_service.dart';
 import '../../theme/app_theme.dart';
 import '../home/home_screen.dart';
-import 'forgot_password_screen.dart';
-import 'register_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailCtrl = TextEditingController();
   final _passCtrl = TextEditingController();
+  final _codeCtrl = TextEditingController();
   final _authService = AuthService();
+
   bool _loading = false;
   bool _obscure = true;
   String? _error;
@@ -26,22 +26,34 @@ class _LoginScreenState extends State<LoginScreen> {
   void dispose() {
     _emailCtrl.dispose();
     _passCtrl.dispose();
+    _codeCtrl.dispose();
     super.dispose();
   }
 
-  Future<void> _login() async {
+  Future<void> _register() async {
     if (!_formKey.currentState!.validate()) return;
-    setState(() { _loading = true; _error = null; });
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+
     try {
-      final cred = await _authService.signIn(_emailCtrl.text, _passCtrl.text);
+      final cred = await _authService.registerWithCode(
+        email: _emailCtrl.text,
+        password: _passCtrl.text,
+        code: _codeCtrl.text,
+      );
       await _authService.createUserProfile(cred.user!);
       if (mounted) {
-        Navigator.of(context).pushReplacement(
+        Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(builder: (_) => const HomeScreen()),
+          (_) => false,
         );
       }
     } on FirebaseAuthException catch (e) {
       setState(() => _error = _mapAuthError(e.code));
+    } on AuthException catch (e) {
+      setState(() => _error = e.message);
     } catch (e) {
       setState(() => _error = 'Error inesperado. Inténtalo de nuevo.');
     } finally {
@@ -50,12 +62,12 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   String _mapAuthError(String code) => switch (code) {
-    'user-not-found'     => 'No existe ninguna cuenta con ese correo.',
-    'wrong-password'     => 'Contraseña incorrecta.',
-    'invalid-credential' => 'Correo o contraseña incorrectos.',
-    'too-many-requests'  => 'Demasiados intentos. Espera un momento.',
-    _                    => 'Error al iniciar sesión. Inténtalo de nuevo.',
-  };
+        'email-already-in-use' => 'Ya existe una cuenta con ese correo.',
+        'invalid-email' => 'Correo electrónico no válido.',
+        'weak-password' => 'La contraseña es demasiado débil.',
+        'too-many-requests' => 'Demasiados intentos. Espera un momento.',
+        _ => 'Error al crear la cuenta. Inténtalo de nuevo.',
+      };
 
   @override
   Widget build(BuildContext context) {
@@ -75,29 +87,28 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Form(
                 key: _formKey,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Logo
                     Image.asset(
                       'assets/images/blue_sailing_icon.png',
-                      width: 120,
-                      height: 120,
+                      width: 96,
+                      height: 96,
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 16),
                     Text(
-                      'Blue Sailing Tests',
-                      style: Theme.of(context).textTheme.displayLarge,
+                      'Registro',
+                      style: Theme.of(context).textTheme.displayMedium,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Patrón de Recreo',
+                      'Introduce tu correo, contraseña y el código de la empresa',
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium
                           ?.copyWith(color: AppTheme.gold),
+                      textAlign: TextAlign.center,
                     ),
-                    const SizedBox(height: 48),
+                    const SizedBox(height: 40),
                     TextFormField(
                       controller: _emailCtrl,
                       keyboardType: TextInputType.emailAddress,
@@ -106,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         labelText: 'Correo electrónico',
                         prefixIcon: Icon(Icons.mail_outline, color: AppTheme.onSurfaceSub),
                       ),
-                      validator: (v) => (v == null || v.isEmpty) ? 'Introduce tu correo' : null,
+                      validator: (v) => (v == null || v.trim().isEmpty) ? 'Introduce tu correo' : null,
                     ),
                     const SizedBox(height: 16),
                     TextFormField(
@@ -124,7 +135,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () => setState(() => _obscure = !_obscure),
                         ),
                       ),
-                      validator: (v) => (v == null || v.isEmpty) ? 'Introduce tu contraseña' : null,
+                      validator: (v) => (v == null || v.isEmpty) ? 'Introduce una contraseña' : null,
+                    ),
+                    const SizedBox(height: 16),
+                    TextFormField(
+                      controller: _codeCtrl,
+                      textCapitalization: TextCapitalization.characters,
+                      style: const TextStyle(color: AppTheme.onSurface),
+                      decoration: const InputDecoration(
+                        labelText: 'Código',
+                        prefixIcon: Icon(Icons.confirmation_number_outlined, color: AppTheme.onSurfaceSub),
+                      ),
+                      validator: (v) => (v == null || v.trim().isEmpty) ? 'Introduce tu código' : null,
                     ),
                     if (_error != null) ...[
                       const SizedBox(height: 16),
@@ -140,39 +162,37 @@ class _LoginScreenState extends State<LoginScreen> {
                             const Icon(Icons.error_outline, color: AppTheme.incorrect, size: 18),
                             const SizedBox(width: 8),
                             Expanded(
-                              child: Text(_error!, style: const TextStyle(color: AppTheme.incorrect, fontSize: 13)),
+                              child: Text(
+                                _error!,
+                                style: const TextStyle(color: AppTheme.incorrect, fontSize: 13),
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ],
-                    const SizedBox(height: 32),
+                    const SizedBox(height: 28),
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _loading ? null : _login,
+                        onPressed: _loading ? null : _register,
                         child: _loading
-                            ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(color: AppTheme.navy, strokeWidth: 2))
-                            : const Text('INICIAR SESIÓN'),
+                            ? const SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(
+                                  color: AppTheme.navy,
+                                  strokeWidth: 2,
+                                ),
+                              )
+                            : const Text('CREAR CUENTA'),
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 10),
                     TextButton(
-                      onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const ForgotPasswordScreen()),
-                      ),
+                      onPressed: _loading ? null : () => Navigator.of(context).pop(),
                       child: Text(
-                        'Olvidé mi contraseña',
-                        style: TextStyle(color: AppTheme.gold.withOpacity(0.8), fontSize: 14),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    TextButton(
-                      onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const RegisterScreen()),
-                      ),
-                      child: Text(
-                        'Crear cuenta',
+                        'Volver al login',
                         style: TextStyle(color: AppTheme.gold.withOpacity(0.8), fontSize: 14),
                       ),
                     ),
@@ -186,3 +206,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+

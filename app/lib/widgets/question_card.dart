@@ -113,7 +113,7 @@ class _QuestionCardState extends State<QuestionCard> {
                               '$label)',
                               style: TextStyle(
                                 color: _tileColor(answer.id) ==
-                                        Colors.transparent
+                                    Colors.transparent
                                     ? AppTheme.onSurfaceSub
                                     : AppTheme.onSurface,
                                 fontWeight: FontWeight.w600,
@@ -128,11 +128,11 @@ class _QuestionCardState extends State<QuestionCard> {
                                     .textTheme
                                     .bodyLarge
                                     ?.copyWith(
-                                      color: _tileBorder(answer.id) ==
-                                              AppTheme.ocean.withOpacity(0.3)
-                                          ? AppTheme.onSurface
-                                          : AppTheme.onSurface,
-                                    ),
+                                  color: _tileBorder(answer.id) ==
+                                      AppTheme.ocean.withOpacity(0.3)
+                                      ? AppTheme.onSurface
+                                      : AppTheme.onSurface,
+                                ),
                               ),
                             ),
                             if (widget.mode == QuestionMode.review) ...[

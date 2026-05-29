@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../models/topic.dart';
 import '../../services/question_service.dart';
+import '../../services/stats_service.dart';
 import '../../theme/app_theme.dart';
 import '../question/practice_battery_screen.dart';
 
@@ -51,13 +53,7 @@ class TopicListScreen extends StatelessWidget {
           final icon  = _topicIcons[id] ?? Icons.help_outline;
           final color = _topicColors[id] ?? AppTheme.ocean;
 
-          return _TopicCard(
-            id: id,
-            name: name,
-            count: count,
-            icon: icon,
-            color: color,
-          );
+          return _TopicCard(id: id, name: name, count: count, icon: icon, color: color);
         },
       ),
     );
@@ -80,44 +76,35 @@ class _TopicCard extends StatelessWidget {
   });
 
   Future<void> _start(BuildContext context) async {
-    // Show loading indicator
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (_) => const Center(
-        child: CircularProgressIndicator(color: AppTheme.gold),
-      ),
+      builder: (_) => const Center(child: CircularProgressIndicator(color: AppTheme.gold)),
     );
 
     try {
-      final questions =
-          await QuestionService().getQuestionsByTopic(id);
+      final uid = FirebaseAuth.instance.currentUser?.uid ?? '';
+      final answeredIds = await StatsService().getAnsweredQuestionIds(uid, id);
+      final questions = await QuestionService().getBatteryForTopic(id, answeredIds);
+
       if (context.mounted) {
-        Navigator.of(context).pop(); // close loader
+        Navigator.of(context).pop();
         if (questions.isEmpty) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-                content: Text('No hay preguntas para este tema aún.')),
+            const SnackBar(content: Text('No hay preguntas para este tema aún.')),
           );
           return;
         }
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (_) => PracticeBatteryScreen(
-              title: name,
-              questions: questions,
-              topicId: id,
-              topicName: name,
-            ),
+            builder: (_) => PracticeBatteryScreen(title: name, questions: questions),
           ),
         );
       }
     } catch (e) {
       if (context.mounted) {
         Navigator.of(context).pop();
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Error: $e')));
       }
     }
   }
@@ -154,18 +141,14 @@ class _TopicCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(name,
-                          style: Theme.of(context).textTheme.titleMedium),
+                      Text(name, style: Theme.of(context).textTheme.titleMedium),
                       const SizedBox(height: 4),
-                      Text(
-                        '$count preguntas en el examen real',
-                        style: Theme.of(context).textTheme.bodyMedium,
-                      ),
+                      Text('$count preguntas en el examen real',
+                          style: Theme.of(context).textTheme.bodyMedium),
                     ],
                   ),
                 ),
-                Icon(Icons.chevron_right,
-                    color: AppTheme.onSurfaceSub.withOpacity(0.5)),
+                Icon(Icons.chevron_right, color: AppTheme.onSurfaceSub.withOpacity(0.5)),
               ],
             ),
           ),

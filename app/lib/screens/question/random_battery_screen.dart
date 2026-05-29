@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../services/question_service.dart';
+import '../../services/stats_service.dart';
 import '../../theme/app_theme.dart';
 import 'practice_battery_screen.dart';
 
@@ -11,7 +13,6 @@ class RandomBatteryScreen extends StatefulWidget {
 }
 
 class _RandomBatteryScreenState extends State<RandomBatteryScreen> {
-  final _svc = QuestionService();
   bool _loading = true;
   String? _error;
 
@@ -22,14 +23,15 @@ class _RandomBatteryScreenState extends State<RandomBatteryScreen> {
   }
 
   Future<void> _load() async {
+    setState(() { _loading = true; _error = null; });
     try {
-      final questions = await _svc.getRandomQuestions(count: 20);
+      final uid = FirebaseAuth.instance.currentUser?.uid ?? '';
+      final answeredIds = await StatsService().getAllAnsweredQuestionIds(uid);
+      final questions = await QuestionService().getBatteryRandom(answeredIds);
+
       if (!mounted) return;
       if (questions.isEmpty) {
-        setState(() {
-          _loading = false;
-          _error = 'No hay preguntas disponibles.';
-        });
+        setState(() { _loading = false; _error = 'No hay preguntas disponibles.'; });
         return;
       }
       Navigator.of(context).pushReplacement(
@@ -52,19 +54,13 @@ class _RandomBatteryScreenState extends State<RandomBatteryScreen> {
       body: Center(
         child: _error != null
             ? Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(_error!, style: const TextStyle(color: AppTheme.incorrect)),
-                  const SizedBox(height: 16),
-                  ElevatedButton(
-                    onPressed: () {
-                      setState(() { _loading = true; _error = null; });
-                      _load();
-                    },
-                    child: const Text('Reintentar'),
-                  ),
-                ],
-              )
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(_error!, style: const TextStyle(color: AppTheme.incorrect)),
+            const SizedBox(height: 16),
+            ElevatedButton(onPressed: _load, child: const Text('Reintentar')),
+          ],
+        )
             : const CircularProgressIndicator(color: AppTheme.gold),
       ),
     );

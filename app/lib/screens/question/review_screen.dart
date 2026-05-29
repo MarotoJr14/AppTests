@@ -48,7 +48,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
 
   int get _correct => widget.entries
       .where((e) => e.selectedAnswerId != null &&
-          e.selectedAnswerId == e.correctAnswerId)
+      e.selectedAnswerId == e.correctAnswerId)
       .length;
 
   @override
@@ -158,7 +158,7 @@ class ReviewScreenFactory {
       title: title,
       entries: List.generate(
         questions.length,
-        (i) => ReviewEntry(
+            (i) => ReviewEntry(
           statement: questions[i].statement,
           answers: questions[i].answers,
           correctAnswerId: questions[i].correctAnswerId,
