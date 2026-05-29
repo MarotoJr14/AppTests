@@ -29,20 +29,137 @@ service cloud.firestore {
 
     // ── exams (own exams only) ───────────────────────────────────────────
     match /exams/{examId} {
-      // Read & update: only the owner
-      allow read, update, delete: if isAuth()
-        && resource.data.userId == request.auth.uid;
-      // Create: userId in new doc must match caller
-      allow create: if isAuth()
-        && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if isAuth() && resource.data.userId == request.auth.uid;
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
     }
 
     // ── userTopicStats (own stats only) ──────────────────────────────────
-    match /userTopicStats/{docId} {
-      allow read: if isAuth()
-        && resource.data.userId == request.auth.uid;
-      allow write: if isAuth()
-        && request.resource.data.userId == request.auth.uid;
+    match /userQuestionResults/{docId} {
+      allow read: if isAuth() && resource.data.userId == request.auth.uid;
+      allow write: if isAuth() && request.resource.data.userId == request.auth.uid;
+    }
+
+    // ✅ Registration codes (used before login)
+    // Doc id = code (e.g. "ABCD1234")
+    // Fields:
+    //  - code: string
+    //  - available: bool
+    //  - assignedEmail: string|null
+    //  - usedAt: timestamp|null
+    //  - reservedForEmail: string|null
+    //  - reservedUntil: timestamp|null
+    //  - updatedAt: timestamp
+    match /registrationCodes/{codeId} {
+      allow get: if true;
+      allow list: if false;
+      allow create, delete: if false;
+
+      function isTimestamp(v) {
+        return v is timestamp;
+      }
+
+      function sameCoreFields() {
+        return request.resource.data.code == resource.data.code
+          && request.resource.data.code == codeId
+          && request.resource.data.assignedEmail == resource.data.assignedEmail
+          && request.resource.data.available == resource.data.available
+          && request.resource.data.usedAt == resource.data.usedAt;
+      }
+
+      function reservationUpdate() {
+        return resource.data.available == true
+          && request.resource.data.available == true
+          && request.resource.data.usedAt == resource.data.usedAt
+          && request.resource.data.reservedForEmail is string
+          && isTimestamp(request.resource.data.reservedUntil);
+      }
+
+      function reservationRelease() {
+        return resource.data.available == true
+          && request.resource.data.available == true
+          && request.resource.data.usedAt == resource.data.usedAt
+          && request.resource.data.reservedForEmail == null
+          && request.resource.data.reservedUntil == null;
+      }
+
+      function finalizeUse() {
+        return resource.data.available == true
+          && request.resource.data.available == false
+          && resource.data.assignedEmail is string
+          && request.resource.data.assignedEmail == resource.data.assignedEmail
+          && isTimestamp(request.resource.data.usedAt)
+          && request.resource.data.reservedForEmail == null
+          && request.resource.data.reservedUntil == null;
+      }
+
+      function resetExpired() {
+        return resource.data.available == false
+          && resource.data.usedAt is timestamp
+          && request.time > resource.data.usedAt + duration.value(365, 'd')
+          && request.resource.data.available == true
+          && request.resource.data.assignedEmail == null
+          && request.resource.data.usedAt == null
+          && request.resource.data.reservedForEmail == null
+          && request.resource.data.reservedUntil == null;
+      }
+
+      allow update: if request.resource.data.keys().hasOnly([
+          'code',
+          'available',
+          'assignedEmail',
+          'usedAt',
+          'reservedForEmail',
+          'reservedUntil',
+          'updatedAt'
+        ])
+        && request.resource.data.code == codeId
+        && (
+          resetExpired()
+          || (sameCoreFields() && (reservationUpdate() || reservationRelease()))
+          || finalizeUse()
+        );
+    }
+
+    // ✅ Per-email lock (3 bad codes => 5 min lock)
+    // Doc id = normalized email (lowercase)
+    // Fields:
+    //  - email: string
+    //  - failedCodeAttempts: int
+    //  - lockedUntil: timestamp|null
+    //  - updatedAt: timestamp
+    match /registrationLocks/{emailId} {
+      allow get: if true;
+      allow list: if false;
+      allow delete: if false;
+
+      function isTimestamp(v) {
+        return v is timestamp;
+      }
+
+      function validCreate() {
+        return request.resource.data.email == emailId
+          && request.resource.data.failedCodeAttempts is int
+          && request.resource.data.failedCodeAttempts >= 0
+          && (!('lockedUntil' in request.resource.data) || request.resource.data.lockedUntil == null || isTimestamp(request.resource.data.lockedUntil))
+          ;
+      }
+
+      function validUpdate() {
+        // Prevent clearing an active lock early.
+        let wasLocked = ('lockedUntil' in resource.data) && resource.data.lockedUntil is timestamp && resource.data.lockedUntil > request.time;
+        let clearsLock = ('lockedUntil' in request.resource.data) && request.resource.data.lockedUntil == null;
+
+        return request.resource.data.email == emailId
+          && request.resource.data.failedCodeAttempts is int
+          && request.resource.data.failedCodeAttempts >= 0
+          && !(wasLocked && clearsLock);
+      }
+
+      allow create: if request.resource.data.keys().hasOnly(['email', 'failedCodeAttempts', 'lockedUntil', 'updatedAt'])
+        && validCreate();
+
+      allow update: if request.resource.data.keys().hasOnly(['email', 'failedCodeAttempts', 'lockedUntil', 'updatedAt'])
+        && validUpdate();
     }
   }
 }

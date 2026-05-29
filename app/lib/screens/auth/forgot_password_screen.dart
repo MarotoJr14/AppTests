@@ -61,7 +61,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       const SizedBox(height: 16),
       Text(
         'Hemos enviado un enlace de recuperación a ${_emailCtrl.text.trim()}. '
-        'Revisa tu bandeja de entrada.',
+            'Revisa tu bandeja de entrada.',
         style: Theme.of(context).textTheme.bodyLarge,
         textAlign: TextAlign.center,
       ),
@@ -90,7 +90,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             prefixIcon: Icon(Icons.mail_outline, color: AppTheme.onSurfaceSub),
           ),
           validator: (v) =>
-              (v == null || v.isEmpty) ? 'Introduce tu correo' : null,
+          (v == null || v.isEmpty) ? 'Introduce tu correo' : null,
         ),
         if (_error != null) ...[
           const SizedBox(height: 16),
@@ -122,9 +122,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             onPressed: _loading ? null : _send,
             child: _loading
                 ? const SizedBox(
-                    height: 20, width: 20,
-                    child: CircularProgressIndicator(
-                        color: AppTheme.navy, strokeWidth: 2))
+                height: 20, width: 20,
+                child: CircularProgressIndicator(
+                    color: AppTheme.navy, strokeWidth: 2))
                 : const Text('ENVIAR ENLACE'),
           ),
         ),

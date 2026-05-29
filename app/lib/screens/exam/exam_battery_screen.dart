@@ -179,9 +179,9 @@ class _ExamBatteryScreenState extends State<ExamBatteryScreen> {
                     child: Text(
                       'Pregunta $sectionPos/${entry.sectionTotal}',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppTheme.gold,
-                            fontWeight: FontWeight.w600,
-                          ),
+                        color: AppTheme.gold,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 12),

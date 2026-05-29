@@ -1,50 +1,35 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-
+/// Computed stats for a topic, derived from UserQuestionResult records.
+/// Not stored in Firestore — calculated client-side from userQuestionResults.
 class UserTopicStats {
   final String userId;
   final String topicId;
   final String topicName;
-  final int totalAnswered;
-  final int totalCorrect;
+  final int totalQuestions;   // total questions in DB for this topic
+  final int answeredUnique;   // unique questions answered at least once
+  final int correctUnique;    // unique questions whose LAST answer was correct
 
   const UserTopicStats({
     required this.userId,
     required this.topicId,
     required this.topicName,
-    required this.totalAnswered,
-    required this.totalCorrect,
+    required this.totalQuestions,
+    required this.answeredUnique,
+    required this.correctUnique,
   });
 
+  /// Rate based on unique questions: correct last answers / total questions in DB
   double get correctRate =>
-      totalAnswered == 0 ? 0 : totalCorrect / totalAnswered;
-
-  static String docId(String userId, String topicId) => '${userId}_$topicId';
-
-  factory UserTopicStats.fromFirestore(DocumentSnapshot doc) {
-    final d = doc.data() as Map<String, dynamic>;
-    return UserTopicStats(
-      userId: d['userId'] as String,
-      topicId: d['topicId'] as String,
-      topicName: d['topicName'] as String,
-      totalAnswered: d['totalAnswered'] as int,
-      totalCorrect: d['totalCorrect'] as int,
-    );
-  }
+      totalQuestions == 0 ? 0 : correctUnique / totalQuestions;
 
   factory UserTopicStats.empty(String userId, String topicId, String topicName) =>
       UserTopicStats(
         userId: userId,
         topicId: topicId,
         topicName: topicName,
-        totalAnswered: 0,
-        totalCorrect: 0,
+        totalQuestions: 0,
+        answeredUnique: 0,
+        correctUnique: 0,
       );
 
-  Map<String, dynamic> toFirestore() => {
-    'userId': userId,
-    'topicId': topicId,
-    'topicName': topicName,
-    'totalAnswered': totalAnswered,
-    'totalCorrect': totalCorrect,
-  };
+  static String docId(String userId, String topicId) => '${userId}_$topicId';
 }

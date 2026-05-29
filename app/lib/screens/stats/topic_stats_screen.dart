@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fl_chart/fl_chart.dart';
-import '../../models/topic.dart';
 import '../../models/user_topic_stats.dart';
 import '../../services/stats_service.dart';
+import '../../services/question_service.dart';
 import '../../theme/app_theme.dart';
 
 class TopicStatsScreen extends StatefulWidget {
@@ -33,8 +33,14 @@ class _TopicStatsScreenState extends State<TopicStatsScreen> {
   @override
   void initState() {
     super.initState();
+    _future = _loadStats();
+  }
+
+  Future<List<UserTopicStats>> _loadStats() async {
     final uid = FirebaseAuth.instance.currentUser!.uid;
-    _future = StatsService().getUserTopicStats(uid);
+    // Load question counts and user results in parallel
+    final counts = await QuestionService().getTopicQuestionCounts();
+    return StatsService().getUserTopicStats(uid, counts);
   }
 
   @override
@@ -45,13 +51,11 @@ class _TopicStatsScreenState extends State<TopicStatsScreen> {
         future: _future,
         builder: (ctx, snap) {
           if (snap.connectionState == ConnectionState.waiting) {
-            return const Center(
-                child: CircularProgressIndicator(color: AppTheme.gold));
+            return const Center(child: CircularProgressIndicator(color: AppTheme.gold));
           }
           if (snap.hasError) {
             return Center(
-              child: Text('Error: ${snap.error}',
-                  style: const TextStyle(color: AppTheme.incorrect)),
+              child: Text('Error: ${snap.error}', style: const TextStyle(color: AppTheme.incorrect)),
             );
           }
           final stats = snap.data ?? [];
@@ -60,7 +64,7 @@ class _TopicStatsScreenState extends State<TopicStatsScreen> {
             itemCount: stats.length,
             separatorBuilder: (_, __) => const SizedBox(height: 12),
             itemBuilder: (_, i) {
-              final s = stats[i];
+              final s    = stats[i];
               final icon = _topicIcons[s.topicId] ?? Icons.help_outline;
               return _TopicStatCard(stats: s, icon: icon);
             },
@@ -81,7 +85,7 @@ class _TopicStatCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final rate    = stats.correctRate;
     final pct     = (rate * 100).round();
-    final hasData = stats.totalAnswered > 0;
+    final hasData = stats.answeredUnique > 0;
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -92,7 +96,6 @@ class _TopicStatCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Icon
           Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
@@ -102,18 +105,15 @@ class _TopicStatCard extends StatelessWidget {
             child: Icon(icon, color: AppTheme.oceanLight, size: 24),
           ),
           const SizedBox(width: 14),
-
-          // Name + counters
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(stats.topicName,
-                    style: Theme.of(context).textTheme.titleMedium),
+                Text(stats.topicName, style: Theme.of(context).textTheme.titleMedium),
                 const SizedBox(height: 4),
                 Text(
                   hasData
-                      ? '${stats.totalCorrect} / ${stats.totalAnswered} correctas'
+                      ? '${stats.correctUnique} correctas / ${stats.totalQuestions} preguntas totales'
                       : 'Sin datos aún',
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
@@ -121,7 +121,6 @@ class _TopicStatCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
-
           // Pie chart
           SizedBox(
             width: 64,
@@ -136,27 +135,27 @@ class _TopicStatCard extends StatelessWidget {
                     centerSpaceRadius: 20,
                     sections: hasData
                         ? [
-                            PieChartSectionData(
-                              value: rate,
-                              color: _rateColor(rate),
-                              radius: 12,
-                              showTitle: false,
-                            ),
-                            PieChartSectionData(
-                              value: 1 - rate,
-                              color: AppTheme.navy,
-                              radius: 12,
-                              showTitle: false,
-                            ),
-                          ]
+                      PieChartSectionData(
+                        value: rate,
+                        color: _rateColor(rate),
+                        radius: 12,
+                        showTitle: false,
+                      ),
+                      PieChartSectionData(
+                        value: 1 - rate,
+                        color: AppTheme.navy,
+                        radius: 12,
+                        showTitle: false,
+                      ),
+                    ]
                         : [
-                            PieChartSectionData(
-                              value: 1,
-                              color: AppTheme.ocean.withOpacity(0.2),
-                              radius: 12,
-                              showTitle: false,
-                            ),
-                          ],
+                      PieChartSectionData(
+                        value: 1,
+                        color: AppTheme.ocean.withOpacity(0.2),
+                        radius: 12,
+                        showTitle: false,
+                      ),
+                    ],
                   ),
                 ),
                 Text(

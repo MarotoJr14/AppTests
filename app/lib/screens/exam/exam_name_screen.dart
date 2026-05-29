@@ -81,8 +81,8 @@ class _ExamNameScreenState extends State<ExamNameScreen> {
                       child: Text(
                         '45 preguntas distribuidas por tema, igual que el examen oficial de Patrón de Recreo.',
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              color: AppTheme.onSurface,
-                            ),
+                          color: AppTheme.onSurface,
+                        ),
                       ),
                     ),
                   ],
@@ -122,7 +122,7 @@ class _ExamNameScreenState extends State<ExamNameScreen> {
                     color: AppTheme.incorrect.withOpacity(0.15),
                     borderRadius: BorderRadius.circular(8),
                     border:
-                        Border.all(color: AppTheme.incorrect.withOpacity(0.4)),
+                    Border.all(color: AppTheme.incorrect.withOpacity(0.4)),
                   ),
                   child: Row(
                     children: [
@@ -147,11 +147,11 @@ class _ExamNameScreenState extends State<ExamNameScreen> {
                   onPressed: _loading ? null : _start,
                   child: _loading
                       ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                              color: AppTheme.navy, strokeWidth: 2),
-                        )
+                    height: 20,
+                    width: 20,
+                    child: CircularProgressIndicator(
+                        color: AppTheme.navy, strokeWidth: 2),
+                  )
                       : const Text('COMENZAR EXAMEN'),
                 ),
               ),

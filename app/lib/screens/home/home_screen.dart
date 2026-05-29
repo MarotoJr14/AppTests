@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              // ── Top bar ─────────────────────────────────────────────────
+              // Top bar
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 child: Row(
@@ -45,17 +45,12 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              // ── Logo + title ────────────────────────────────────────────
-              const SizedBox(height: 16),
-              Container(
-                width: 90,
-                height: 90,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppTheme.gold, width: 2),
-                  color: AppTheme.surfaceCard,
-                ),
-                child: const Icon(Icons.anchor, size: 48, color: AppTheme.gold),
+              // Logo + title
+              const SizedBox(height: 8),
+              Image.asset(
+                'assets/images/blue_sailing_icon.png',
+                width: 100,
+                height: 100,
               ),
               const SizedBox(height: 16),
               Text(
@@ -71,9 +66,9 @@ class HomeScreen extends StatelessWidget {
                     .bodyMedium
                     ?.copyWith(color: AppTheme.gold, letterSpacing: 1.2),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 32),
 
-              // ── Cards grid ──────────────────────────────────────────────
+              // Cards grid
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -88,8 +83,7 @@ class HomeScreen extends StatelessWidget {
                         title: 'Simulación de\nexamen real',
                         subtitle: '45 preguntas',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (_) => const ExamNameScreen()),
+                          MaterialPageRoute(builder: (_) => const ExamNameScreen()),
                         ),
                       ),
                       _HomeCard(
@@ -97,8 +91,7 @@ class HomeScreen extends StatelessWidget {
                         title: 'Preguntas\naleatorias',
                         subtitle: 'Sin filtro de tema',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (_) => const RandomBatteryScreen()),
+                          MaterialPageRoute(builder: (_) => const RandomBatteryScreen()),
                         ),
                       ),
                       _HomeCard(
@@ -106,8 +99,7 @@ class HomeScreen extends StatelessWidget {
                         title: 'Preguntas\npor tema',
                         subtitle: '11 temas',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (_) => const TopicListScreen()),
+                          MaterialPageRoute(builder: (_) => const TopicListScreen()),
                         ),
                       ),
                       _HomeCard(
@@ -115,8 +107,7 @@ class HomeScreen extends StatelessWidget {
                         title: 'Estadísticas',
                         subtitle: 'Tu progreso',
                         onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (_) => const StatsScreen()),
+                          MaterialPageRoute(builder: (_) => const StatsScreen()),
                         ),
                       ),
                     ],
@@ -172,13 +163,9 @@ class _HomeCard extends StatelessWidget {
                   child: Icon(icon, color: AppTheme.gold, size: 28),
                 ),
                 const Spacer(),
-                Text(title,
-                    style: Theme.of(context).textTheme.titleMedium,
-                    maxLines: 2),
+                Text(title, style: Theme.of(context).textTheme.titleMedium, maxLines: 2),
                 const SizedBox(height: 4),
-                Text(subtitle,
-                    style: Theme.of(context).textTheme.bodyMedium,
-                    maxLines: 1),
+                Text(subtitle, style: Theme.of(context).textTheme.bodyMedium, maxLines: 1),
               ],
             ),
           ),

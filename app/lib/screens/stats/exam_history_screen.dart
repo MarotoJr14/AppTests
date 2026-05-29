@@ -118,9 +118,9 @@ class _ExamTile extends StatelessWidget {
                     Text(
                       '$correct/$total',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            color:
-                                passed ? AppTheme.correct : AppTheme.incorrect,
-                          ),
+                        color:
+                        passed ? AppTheme.correct : AppTheme.incorrect,
+                      ),
                     ),
                     Text(
                       '$pct%',
