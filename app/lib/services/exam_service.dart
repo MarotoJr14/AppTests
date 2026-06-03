@@ -74,6 +74,7 @@ class ExamService {
             topicId: s.topicId,
             topicName: s.topicName,
             isCorrect: q.isCorrect == true,
+            selectedAnswerId: q.selectedAnswerId,
             answeredAt: DateTime.now(),
           ));
         }

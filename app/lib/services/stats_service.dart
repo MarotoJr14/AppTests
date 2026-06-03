@@ -13,6 +13,7 @@ class StatsService {
     required String topicId,
     required String topicName,
     required bool isCorrect,
+    String? selectedAnswerId,
   }) async {
     final ref = _db
         .collection('userQuestionResults')
@@ -24,6 +25,7 @@ class StatsService {
         topicId: topicId,
         topicName: topicName,
         isCorrect: isCorrect,
+        selectedAnswerId: selectedAnswerId,
         answeredAt: DateTime.now(),
       ).toFirestore(),
       // Always overwrite — we only keep the last answer
@@ -61,6 +63,27 @@ class StatsService {
         (doc.data()['questionId'] as String):
         UserQuestionResult.fromFirestore(doc)
     };
+  }
+
+  Future<List<UserQuestionResult>> getWrongQuestionResults(
+      String userId) async {
+    final snap = await _db
+        .collection('userQuestionResults')
+        .where('userId', isEqualTo: userId)
+        .where('isCorrect', isEqualTo: false)
+        .get();
+    return snap.docs.map(UserQuestionResult.fromFirestore).toList();
+  }
+
+  Future<List<UserQuestionResult>> getWrongQuestionResultsByTopic(
+      String userId, String topicId) async {
+    final snap = await _db
+        .collection('userQuestionResults')
+        .where('userId', isEqualTo: userId)
+        .where('topicId', isEqualTo: topicId)
+        .where('isCorrect', isEqualTo: false)
+        .get();
+    return snap.docs.map(UserQuestionResult.fromFirestore).toList();
   }
 
   // ── Get answered question IDs for a specific topic ───────────────────────

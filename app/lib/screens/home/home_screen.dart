@@ -3,6 +3,7 @@ import '../../services/auth_service.dart';
 import '../../theme/app_theme.dart';
 import '../auth/login_screen.dart';
 import '../exam/exam_name_screen.dart';
+import '../question/error_review_choice_screen.dart';
 import '../question/random_battery_screen.dart';
 import '../topic/topic_list_screen.dart';
 import '../stats/stats_screen.dart';
@@ -60,7 +61,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Patrón de Recreo',
+                'Patrón de Embarcaciones de Recreo',
                 style: Theme.of(context)
                     .textTheme
                     .bodyMedium
@@ -72,49 +73,77 @@ class HomeScreen extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: GridView.count(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 16,
-                    crossAxisSpacing: 16,
-                    childAspectRatio: 0.95,
-                    children: [
-                      _HomeCard(
-                        icon: Icons.assignment_outlined,
-                        title: 'Simulación de\nexamen real',
-                        subtitle: '45 preguntas',
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const ExamNameScreen()),
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      const spacing = 14.0;
+                      final cardWidth = (constraints.maxWidth - spacing) / 2;
+                      return SingleChildScrollView(
+                        child: Wrap(
+                          spacing: spacing,
+                          runSpacing: spacing,
+                          children: [
+                            SizedBox(
+                              width: cardWidth,
+                              height: 160,
+                              child: _HomeCard(
+                                icon: Icons.assignment_outlined,
+                                title: 'Simulación de\nexamen real',
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => const ExamNameScreen()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: cardWidth,
+                              height: 160,
+                              child: _HomeCard(
+                                icon: Icons.shuffle_rounded,
+                                title: 'Preguntas\naleatorias',
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => const RandomBatteryScreen()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: cardWidth,
+                              height: 160,
+                              child: _HomeCard(
+                                icon: Icons.menu_book_outlined,
+                                title: 'Preguntas\npor tema',
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => const TopicListScreen()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: cardWidth,
+                              height: 160,
+                              child: _HomeCard(
+                                icon: Icons.error_outline,
+                                title: 'Repaso de\nerrores',
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => const ErrorReviewChoiceScreen()),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: constraints.maxWidth,
+                              height: 160,
+                              child: _HomeCard(
+                                icon: Icons.bar_chart_rounded,
+                                title: 'Estadísticas\ny progreso',
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(builder: (_) => const StatsScreen()),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                      _HomeCard(
-                        icon: Icons.shuffle_rounded,
-                        title: 'Preguntas\naleatorias',
-                        subtitle: 'Sin filtro de tema',
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const RandomBatteryScreen()),
-                        ),
-                      ),
-                      _HomeCard(
-                        icon: Icons.menu_book_outlined,
-                        title: 'Preguntas\npor tema',
-                        subtitle: '11 temas',
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const TopicListScreen()),
-                        ),
-                      ),
-                      _HomeCard(
-                        icon: Icons.bar_chart_rounded,
-                        title: 'Estadísticas',
-                        subtitle: 'Tu progreso',
-                        onTap: () => Navigator.of(context).push(
-                          MaterialPageRoute(builder: (_) => const StatsScreen()),
-                        ),
-                      ),
-                    ],
+                      );
+                    },
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
             ],
           ),
         ),
@@ -126,13 +155,11 @@ class HomeScreen extends StatelessWidget {
 class _HomeCard extends StatelessWidget {
   final IconData icon;
   final String title;
-  final String subtitle;
   final VoidCallback onTap;
 
   const _HomeCard({
     required this.icon,
     required this.title,
-    required this.subtitle,
     required this.onTap,
   });
 
@@ -150,12 +177,12 @@ class _HomeCard extends StatelessWidget {
             border: Border.all(color: AppTheme.ocean.withOpacity(0.4)),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: AppTheme.gold.withOpacity(0.15),
                     borderRadius: BorderRadius.circular(10),
@@ -164,8 +191,6 @@ class _HomeCard extends StatelessWidget {
                 ),
                 const Spacer(),
                 Text(title, style: Theme.of(context).textTheme.titleMedium, maxLines: 2),
-                const SizedBox(height: 4),
-                Text(subtitle, style: Theme.of(context).textTheme.bodyMedium, maxLines: 1),
               ],
             ),
           ),

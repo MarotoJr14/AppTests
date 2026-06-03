@@ -32,11 +32,13 @@ class ReviewEntry {
 class ReviewScreen extends StatefulWidget {
   final String title;
   final List<ReviewEntry> entries;
+  final bool showResultDialog;
 
   const ReviewScreen({
     super.key,
     required this.title,
     required this.entries,
+    this.showResultDialog = false,
   });
 
   @override
@@ -47,14 +49,16 @@ class _ReviewScreenState extends State<ReviewScreen> {
   bool _dialogShown = false;
 
   int get _correct => widget.entries
-      .where((e) => e.selectedAnswerId != null &&
-      e.selectedAnswerId == e.correctAnswerId)
+      .where((e) =>
+          e.selectedAnswerId != null && e.selectedAnswerId == e.correctAnswerId)
       .length;
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _showDialog());
+    if (widget.showResultDialog) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _showDialog());
+    }
   }
 
   void _showDialog() {
@@ -66,19 +70,12 @@ class _ReviewScreenState extends State<ReviewScreen> {
       builder: (ctx) => AlertDialog(
         backgroundColor: AppTheme.surfaceCard,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: Text('Resultado',
-            style: Theme.of(context).textTheme.displayMedium),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.flag_rounded, size: 48, color: AppTheme.gold),
-            const SizedBox(height: 16),
-            Text(
-              'Has acertado $_correct preguntas de un total de ${widget.entries.length}.',
-              style: Theme.of(context).textTheme.bodyLarge,
-              textAlign: TextAlign.center,
-            ),
-          ],
+        title:
+            Text('Resultado', style: Theme.of(context).textTheme.displayMedium),
+        content: Text(
+          'Has acertado $_correct preguntas de un total de ${widget.entries.length}',
+          style: Theme.of(context).textTheme.bodyLarge,
+          textAlign: TextAlign.center,
         ),
         actions: [
           ElevatedButton(
@@ -113,10 +110,10 @@ class _ReviewScreenState extends State<ReviewScreen> {
               Row(
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: AppTheme.ocean.withOpacity(0.2),
+                      color: AppTheme.ocean.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(e.topicName,
@@ -156,16 +153,17 @@ class ReviewScreenFactory {
   }) {
     return ReviewScreen(
       title: title,
-      entries: List.generate(
-        questions.length,
-            (i) => ReviewEntry(
-          statement: questions[i].statement,
-          answers: questions[i].answers,
-          correctAnswerId: questions[i].correctAnswerId,
-          selectedAnswerId: selected[i],
-          topicName: questions[i].topicName,
-        ),
-      ),
+      entries: [
+        for (int i = 0; i < questions.length; i++)
+          if (selected[i] != null)
+            ReviewEntry(
+              statement: questions[i].statement,
+              answers: questions[i].answers,
+              correctAnswerId: questions[i].correctAnswerId,
+              selectedAnswerId: selected[i],
+              topicName: questions[i].topicName,
+            ),
+      ],
     );
   }
 }

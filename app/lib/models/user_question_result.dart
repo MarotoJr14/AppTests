@@ -9,6 +9,7 @@ class UserQuestionResult {
   final String topicId;
   final String topicName;
   final bool isCorrect;
+  final String? selectedAnswerId;
   final DateTime answeredAt;
 
   const UserQuestionResult({
@@ -17,6 +18,7 @@ class UserQuestionResult {
     required this.topicId,
     required this.topicName,
     required this.isCorrect,
+    this.selectedAnswerId,
     required this.answeredAt,
   });
 
@@ -31,6 +33,7 @@ class UserQuestionResult {
       topicId: d['topicId'] as String,
       topicName: d['topicName'] as String,
       isCorrect: d['isCorrect'] as bool,
+      selectedAnswerId: d['selectedAnswerId'] as String?,
       answeredAt: (d['answeredAt'] as Timestamp).toDate(),
     );
   }
@@ -41,6 +44,7 @@ class UserQuestionResult {
     'topicId': topicId,
     'topicName': topicName,
     'isCorrect': isCorrect,
+    'selectedAnswerId': selectedAnswerId,
     'answeredAt': FieldValue.serverTimestamp(),
   };
 }

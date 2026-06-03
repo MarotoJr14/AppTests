@@ -26,8 +26,12 @@ class _RandomBatteryScreenState extends State<RandomBatteryScreen> {
     setState(() { _loading = true; _error = null; });
     try {
       final uid = FirebaseAuth.instance.currentUser?.uid ?? '';
-      final answeredIds = await StatsService().getAllAnsweredQuestionIds(uid);
-      final questions = await QuestionService().getBatteryRandom(answeredIds);
+      final userResults = await StatsService().getUserQuestionResults(uid);
+      final answeredIds = userResults.keys.toSet();
+      final questions = await QuestionService().getBatteryRandom(
+        answeredIds,
+        userResults: userResults,
+      );
 
       if (!mounted) return;
       if (questions.isEmpty) {
