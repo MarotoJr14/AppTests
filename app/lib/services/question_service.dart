@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/question.dart';
+import '../models/user_question_result.dart';
 
 class QuestionService {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
@@ -26,31 +27,71 @@ class QuestionService {
   /// Battery ends only when the user taps "Terminar".
   Future<List<Question>> getBatteryForTopic(
       String topicId,
-      Set<String> answeredIds,
-      ) async {
+      Set<String> answeredIds, {
+        Map<String, UserQuestionResult>? userResults,
+      }) async {
     final all = await getQuestionsByTopic(topicId);
     if (all.isEmpty) return [];
 
-    final unanswered = all.where((q) => !answeredIds.contains(q.id)).toList()
-      ..shuffle(_rng);
-    final answered   = all.where((q) =>  answeredIds.contains(q.id)).toList()
-      ..shuffle(_rng);
+    // Priority: unanswered OR last answer incorrect
+    final priority = <Question>[];
+    final secondary = <Question>[]; // last answer correct
 
-    // Unanswered first, then already-answered ones
-    return [...unanswered, ...answered];
+    final results = userResults ?? {};
+
+    for (final q in all) {
+      final r = results[q.id];
+      if (r == null) {
+        priority.add(q);
+      } else if (r.isCorrect == false) {
+        priority.add(q);
+      } else {
+        secondary.add(q);
+      }
+    }
+
+    // Shuffle priority to avoid fixed ordering
+    priority.shuffle(_rng);
+
+    // For secondary (correct answers) show least recently answered first
+    secondary.sort((a, b) {
+      final ta = results[a.id]?.answeredAt ?? DateTime.now();
+      final tb = results[b.id]?.answeredAt ?? DateTime.now();
+      return ta.compareTo(tb);
+    });
+
+    return [...priority, ...secondary];
   }
 
   // ── Get questions for random battery, unanswered first ───────────────────
-  Future<List<Question>> getBatteryRandom(Set<String> answeredIds) async {
+  Future<List<Question>> getBatteryRandom(Set<String> answeredIds,
+      {Map<String, UserQuestionResult>? userResults}) async {
     final all = await getAllQuestions();
     if (all.isEmpty) return [];
 
-    final unanswered = all.where((q) => !answeredIds.contains(q.id)).toList()
-      ..shuffle(_rng);
-    final answered   = all.where((q) =>  answeredIds.contains(q.id)).toList()
-      ..shuffle(_rng);
+    final results = userResults ?? {};
+    final priority = <Question>[];
+    final secondary = <Question>[];
 
-    return [...unanswered, ...answered];
+    for (final q in all) {
+      final r = results[q.id];
+      if (r == null) {
+        priority.add(q);
+      } else if (r.isCorrect == false) {
+        priority.add(q);
+      } else {
+        secondary.add(q);
+      }
+    }
+
+    priority.shuffle(_rng);
+    secondary.sort((a, b) {
+      final ta = results[a.id]?.answeredAt ?? DateTime.now();
+      final tb = results[b.id]?.answeredAt ?? DateTime.now();
+      return ta.compareTo(tb);
+    });
+
+    return [...priority, ...secondary];
   }
 
   // ── Get N random questions for a topic (used by real exam) ───────────────

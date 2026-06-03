@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 import '../../models/question.dart';
 import '../../theme/app_theme.dart';
 
@@ -7,7 +6,7 @@ enum QuestionMode { practice, review }
 
 class QuestionCard extends StatefulWidget {
   final String statement;
-  final List<Answer> answers;          // fixed-order from Firestore
+  final List<Answer> answers; // display order supplied by the caller
   final String correctAnswerId;
   final String? selectedAnswerId;
   final QuestionMode mode;
@@ -34,26 +33,29 @@ class _QuestionCardState extends State<QuestionCard> {
   @override
   void initState() {
     super.initState();
-    _shuffled = List<Answer>.from(widget.answers)..shuffle(Random());
+    _shuffled = List<Answer>.from(widget.answers);
   }
 
-  // Re-shuffle only when question changes (statement changes)
   @override
   void didUpdateWidget(QuestionCard old) {
     super.didUpdateWidget(old);
-    if (old.statement != widget.statement) {
-      _shuffled = List<Answer>.from(widget.answers)..shuffle(Random());
+    if (old.statement != widget.statement || old.answers != widget.answers) {
+      _shuffled = List<Answer>.from(widget.answers);
     }
   }
 
   Color _tileColor(String answerId) {
     if (widget.mode == QuestionMode.review) {
-      if (answerId == widget.correctAnswerId) return AppTheme.correct.withOpacity(0.25);
-      if (answerId == widget.selectedAnswerId) return AppTheme.incorrect.withOpacity(0.25);
+      if (answerId == widget.correctAnswerId) {
+        return AppTheme.correct.withValues(alpha: 0.25);
+      }
+      if (answerId == widget.selectedAnswerId) {
+        return AppTheme.incorrect.withValues(alpha: 0.25);
+      }
       return Colors.transparent;
     }
     if (answerId == widget.selectedAnswerId) {
-      return AppTheme.selected.withOpacity(0.25);
+      return AppTheme.selected.withValues(alpha: 0.25);
     }
     return Colors.transparent;
   }
@@ -62,10 +64,10 @@ class _QuestionCardState extends State<QuestionCard> {
     if (widget.mode == QuestionMode.review) {
       if (answerId == widget.correctAnswerId) return AppTheme.correct;
       if (answerId == widget.selectedAnswerId) return AppTheme.incorrect;
-      return AppTheme.ocean.withOpacity(0.3);
+      return AppTheme.ocean.withValues(alpha: 0.3);
     }
     if (answerId == widget.selectedAnswerId) return AppTheme.selected;
-    return AppTheme.ocean.withOpacity(0.3);
+    return AppTheme.ocean.withValues(alpha: 0.3);
   }
 
   @override
@@ -112,10 +114,10 @@ class _QuestionCardState extends State<QuestionCard> {
                             Text(
                               '$label)',
                               style: TextStyle(
-                                color: _tileColor(answer.id) ==
-                                    Colors.transparent
-                                    ? AppTheme.onSurfaceSub
-                                    : AppTheme.onSurface,
+                                color:
+                                    _tileColor(answer.id) == Colors.transparent
+                                        ? AppTheme.onSurfaceSub
+                                        : AppTheme.onSurface,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 14,
                               ),
@@ -128,11 +130,8 @@ class _QuestionCardState extends State<QuestionCard> {
                                     .textTheme
                                     .bodyLarge
                                     ?.copyWith(
-                                  color: _tileBorder(answer.id) ==
-                                      AppTheme.ocean.withOpacity(0.3)
-                                      ? AppTheme.onSurface
-                                      : AppTheme.onSurface,
-                                ),
+                                      color: AppTheme.onSurface,
+                                    ),
                               ),
                             ),
                             if (widget.mode == QuestionMode.review) ...[

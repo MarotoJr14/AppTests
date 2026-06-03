@@ -86,9 +86,8 @@ class _ExamReviewScreenState extends State<ExamReviewScreen> {
         leading: IconButton(
           icon: const Icon(Icons.close),
           onPressed: () {
-            // Pop back to Home (remove all routes above it)
-            Navigator.of(context)
-                .popUntil((route) => route.isFirst);
+            // Return to previous screen (Exam History)
+            Navigator.of(context).pop();
           },
         ),
       ),

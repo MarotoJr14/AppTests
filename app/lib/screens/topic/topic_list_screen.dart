@@ -84,8 +84,13 @@ class _TopicCard extends StatelessWidget {
 
     try {
       final uid = FirebaseAuth.instance.currentUser?.uid ?? '';
-      final answeredIds = await StatsService().getAnsweredQuestionIds(uid, id);
-      final questions = await QuestionService().getBatteryForTopic(id, answeredIds);
+      final userResults = await StatsService().getUserQuestionResults(uid);
+      final answeredIds = userResults.keys.toSet();
+      final questions = await QuestionService().getBatteryForTopic(
+        id,
+        answeredIds,
+        userResults: userResults,
+      );
 
       if (context.mounted) {
         Navigator.of(context).pop();

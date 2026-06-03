@@ -63,8 +63,19 @@ class AuthService {
   }
 
   Future<void> sendPasswordReset(String email) async {
+    final emailNorm = email.trim().toLowerCase();
     try {
-      await _auth.sendPasswordResetEmail(email: email.trim());
+      // Verify that the email belongs to a real user in our `users` collection
+      final snap = await _db
+          .collection('users')
+          .where('email', isEqualTo: emailNorm)
+          .limit(1)
+          .get();
+      if (snap.docs.isEmpty) {
+        throw const AuthException('No existe ningún usuario con ese correo electrónico.');
+      }
+
+      await _auth.sendPasswordResetEmail(email: emailNorm);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         throw const AuthException('No existe ningún usuario con ese correo electrónico.');

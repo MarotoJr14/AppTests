@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../models/question.dart';
@@ -28,9 +30,19 @@ class PracticeBatteryScreen extends StatefulWidget {
 class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
   int _current = 0;
   final Map<int, String> _selected = {};
+  final Map<int, List<Answer>> _answerOrders = {};
+  final Random _rng = Random();
   bool _finishing = false;
 
   Question get _q => widget.questions[_current];
+  bool get _currentAnswered => _selected[_current] != null;
+
+  List<Answer> _answersFor(int index) {
+    return _answerOrders.putIfAbsent(
+      index,
+      () => List<Answer>.from(widget.questions[index].answers)..shuffle(_rng),
+    );
+  }
 
   void _select(String answerId) {
     setState(() => _selected[_current] = answerId);
@@ -54,6 +66,7 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
           topicId: q.topicId,
           topicName: q.topicName,
           isCorrect: selectedId == q.correctAnswerId,
+          selectedAnswerId: selectedId,
           answeredAt: DateTime.now(),
         ));
       }
@@ -61,19 +74,24 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
     }
 
     if (mounted) {
-      final entries = List<ReviewEntry>.generate(
-        widget.questions.length,
-            (i) => ReviewEntry(
-          statement: widget.questions[i].statement,
-          answers: widget.questions[i].answers,
-          correctAnswerId: widget.questions[i].correctAnswerId,
-          selectedAnswerId: _selected[i],
-          topicName: widget.questions[i].topicName,
-        ),
-      );
+      final entries = <ReviewEntry>[
+        for (int i = 0; i < widget.questions.length; i++)
+          if (_selected[i] != null)
+            ReviewEntry(
+              statement: widget.questions[i].statement,
+              answers: _answersFor(i),
+              correctAnswerId: widget.questions[i].correctAnswerId,
+              selectedAnswerId: _selected[i],
+              topicName: widget.questions[i].topicName,
+            ),
+      ];
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => ReviewScreen(title: widget.title, entries: entries),
+          builder: (_) => ReviewScreen(
+            title: widget.title,
+            entries: entries,
+            showResultDialog: true,
+          ),
         ),
       );
     }
@@ -82,60 +100,74 @@ class _PracticeBatteryScreenState extends State<PracticeBatteryScreen> {
   @override
   Widget build(BuildContext context) {
     final q = _q;
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
-      body: Column(
-        children: [
-          LinearProgressIndicator(
-            value: (_current + 1) / widget.questions.length,
-            backgroundColor: AppTheme.surfaceCard,
-            valueColor: const AlwaysStoppedAnimation(AppTheme.gold),
-            minHeight: 3,
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: AppTheme.ocean.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: AppTheme.ocean.withOpacity(0.5)),
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop && !_finishing) {
+          _finish();
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(title: Text(widget.title)),
+        body: Column(
+          children: [
+            LinearProgressIndicator(
+              value: (_current + 1) / widget.questions.length,
+              backgroundColor: AppTheme.surfaceCard,
+              valueColor: const AlwaysStoppedAnimation(AppTheme.gold),
+              minHeight: 3,
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 12, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: AppTheme.ocean.withValues(alpha: 0.2),
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(
+                            color: AppTheme.ocean.withValues(alpha: 0.5)),
+                      ),
+                      child: Text(
+                        q.topicName,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.copyWith(color: AppTheme.onSurface),
+                      ),
                     ),
-                    child: Text(
-                      q.topicName,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppTheme.onSurface),
+                    const SizedBox(height: 12),
+                    Text(
+                      'Pregunta ${_current + 1} / ${widget.questions.length}',
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    'Pregunta ${_current + 1} / ${widget.questions.length}',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                  const SizedBox(height: 12),
-                  QuestionCard(
-                    statement: q.statement,
-                    answers: q.answers,
-                    correctAnswerId: q.correctAnswerId,
-                    selectedAnswerId: _selected[_current],
-                    mode: QuestionMode.practice,
-                    onAnswerSelected: _select,
-                  ),
-                ],
+                    const SizedBox(height: 12),
+                    QuestionCard(
+                      statement: q.statement,
+                      answers: _answersFor(_current),
+                      correctAnswerId: q.correctAnswerId,
+                      selectedAnswerId: _selected[_current],
+                      mode: QuestionMode.practice,
+                      onAnswerSelected: _select,
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-          BatteryNavBar(
-            onPrevious: _current > 0 ? () => setState(() => _current--) : null,
-            onFinish: _finishing ? null : _finish,
-            onNext: _current < widget.questions.length - 1
-                ? () => setState(() => _current++)
-                : null,
-          ),
-        ],
+            BatteryNavBar(
+              onPrevious:
+                  _current > 0 ? () => setState(() => _current--) : null,
+              onFinish: _finishing ? null : _finish,
+              onNext: _currentAnswered && _current < widget.questions.length - 1
+                  ? () => setState(() => _current++)
+                  : null,
+            ),
+          ],
+        ),
       ),
     );
   }
