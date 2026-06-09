@@ -136,8 +136,8 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "amarre_fondeo",
-    "topicName": "Elementos de amarre y fondeo",
+    "topicId": "",
+    "topicName": "Elemeamarre_fondeontos de amarre y fondeo",
     "statement": "En relación al fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
       {
@@ -4408,7 +4408,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Como práctica habitual, una embarcación con un solo ancla se aproximará a la zona de fondeo:",
     "answers": [
@@ -4432,7 +4432,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "¿Qué entendemos por gaza?",
     "answers": [
@@ -4456,7 +4456,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Para contactar con Salvamento Marítimo, ¿de que forma realizaremos la llamada?",
     "answers": [
@@ -4480,7 +4480,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En la estabilidad estática transversal el equilibrio se alcanza cuando:",
     "answers": [
@@ -4504,7 +4504,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Para evitar un excesivo balance, la mejor medida a tomar es:",
     "answers": [
@@ -4528,7 +4528,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Los efectos de navegar en aguas someras son, entre otros:",
     "answers": [
@@ -6472,7 +6472,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuál de las siguientes afirmaciones relativas al fondeo es INCORRECTA?",
     "answers": [
@@ -6496,7 +6496,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
@@ -6520,7 +6520,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Ante una emergencia, ¿cuál es la forma de contactar con Salvamento Marítimo?",
     "answers": [
@@ -6544,7 +6544,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En una embarcación de recreo, al aumentar los pesos en cubierta:",
     "answers": [
@@ -6568,7 +6568,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Navegando con la mar por proa, modificar la velocidad es la forma más eficaz de:",
     "answers": [
@@ -6592,7 +6592,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué señales pirotécnicas debe llevar reglamentariamente una embarcación que esté autorizada a navegar en zona 4 hasta 12 millas de la costa?",
     "answers": [
@@ -6784,7 +6784,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 16 del RIPA, maniobra del buque que cede el paso, todo buque que esté obligado a mantenerse apartado de la derrota de otro buque:",
     "answers": [
@@ -6808,7 +6808,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 18 del RIPA, obligaciones entre categorías de buques, sin perjuicio de lo dispuesto en otras reglas, los buques dedicados a la pesca, en navegación, se mantendrán apartados de la derrota de:",
     "answers": [
@@ -6832,7 +6832,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 7 del RIPA, para determinar si existe riesgo de abordaje, se tendrán en cuenta, entre otras, las siguientes consideraciones:",
     "answers": [
@@ -6856,7 +6856,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 14 del RIPA, cuando dos buques de propulsión mecánica naveguen de vuelta encontrada a rumbos opuestos o casi opuestos, con riesgo de abordaje:",
     "answers": [
@@ -6880,7 +6880,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales indica peligro y necesidad de ayuda?",
     "answers": [
@@ -6904,7 +6904,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 24.a.v) del RIPA, cuando un buque de propulsión mecánica que remolque a otro exhiba una marca bicónica en el lugar más visible, significará que:",
     "answers": [
@@ -6928,7 +6928,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque:",
     "answers": [
@@ -6952,7 +6952,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 8 del RIPA, maniobras para evitar el abordaje, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
@@ -6976,7 +6976,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 10 del RIPA, los buques que utilicen un dispositivo de separación del tráfico deberán, siempre que puedan, evitar:",
     "answers": [
@@ -7000,7 +7000,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 2 del RIPA, respecto de la responsabilidad derivada de negligencias en el cumplimiento del Reglamento, este indica que:",
     "answers": [
@@ -9640,7 +9640,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "El nudo ballestrinque se emplea para:",
     "answers": [
@@ -9664,7 +9664,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuando un barco está fondeado y gira tomando como centro el ancla y como radio la cadena, el barco y la cadena describirán lo que se conoce como:",
     "answers": [
@@ -9688,7 +9688,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué parámetro varia de forma más significativa al variar la estabilidad longitudinal?",
     "answers": [
@@ -9712,7 +9712,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes maniobras se debe realizar inmediatamente cuando vemos a una persona caer al agua?",
     "answers": [
@@ -9736,7 +9736,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Señale la afirmación VERDADERA:",
     "answers": [
@@ -9760,7 +9760,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué es un reflector RADAR?",
     "answers": [
@@ -9952,7 +9952,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 33.a del RIPA, la campana o el gong, o ambos, podrán:",
     "answers": [
@@ -9976,7 +9976,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 37 del RIPA, cuando un buque esté en peligro y requiera ayuda, utilizará o exhibirá la siguiente señal descrita en su Anexo IV:",
     "answers": [
@@ -10000,7 +10000,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 13 del RIPA, todo buque que alcance a otro:",
     "answers": [
@@ -10024,7 +10024,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 35.e del RIPA, en las proximidades o dentro de una zona de visibilidad reducida, un buque remolcado o, si se remolca más de uno, solamente el último del remolque, caso de ir tripulado:",
     "answers": [
@@ -10048,7 +10048,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 18.b del RIPA, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
     "answers": [
@@ -10072,7 +10072,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Conforme a la Regla 3 del RIPA, la expresión 'en navegación' define a un buque que:",
     "answers": [
@@ -10096,7 +10096,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 34.b.iii del RIPA, cuando se lleve, la luz utilizada para las señales de maniobra y advertencia será:",
     "answers": [
@@ -10120,7 +10120,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 24.a.i del RIPA, todo buque de propulsión mecánica cuando remolque a otro exhibirá tres luces de tope a proa, según una línea vertical:",
     "answers": [
@@ -10144,7 +10144,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Conforme a la Regla 30 del RIPA, los buques fondeados exhibirán en el lugar más visible:",
     "answers": [
@@ -10168,7 +10168,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 3 del RIPA - Definiciones generales, la palabra \"buque\" NO designa a:",
     "answers": [
@@ -11800,7 +11800,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Si queremos afirmar el chicote de un cabo a una bita, terminando con cote de seguridad, ¿qué nudo utilizaremos?",
     "answers": [
@@ -11824,7 +11824,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "¿Qué es un bichero?",
     "answers": [
@@ -11848,7 +11848,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿A partir de que temperatura corporal se considera que una persona entra en hipotermia?",
     "answers": [
@@ -11872,7 +11872,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Es obligatoria la instalación de un reflector radar en una embarcación de recreo que navegue en zonas 5, 6 o 7?",
     "answers": [
@@ -11896,7 +11896,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En aguas someras:",
     "answers": [
@@ -11920,7 +11920,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes NO es una medida a tomar antes de salir a la mar?",
     "answers": [
@@ -12112,7 +12112,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 6 del RIPA, para determinar la velocidad de seguridad NO se tendrá en cuenta:",
     "answers": [
@@ -12136,7 +12136,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 23.c del RIPA, la luz roja centelleante todo horizonte de gran intensidad se exhibirá:",
     "answers": [
@@ -12160,7 +12160,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 19 del RIPA, conducta de los buques en condiciones de visibilidad reducida:",
     "answers": [
@@ -12184,7 +12184,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 35.b del RIPA, un buque de propulsión mecánica en navegación, pero parado y sin arrancada, emitirá a intervalos que no excedan de dos minutos:",
     "answers": [
@@ -12208,7 +12208,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 34.a del RIPA, un buque de propulsión mecánica en navegación que esté a la vista de otro, ¿qué señal o señales emitirá con el pito para indicar que \"está dando atrás\"?",
     "answers": [
@@ -12232,7 +12232,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 9 del RIPA, los buques que naveguen a lo largo de un paso o canal angosto, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
@@ -12256,7 +12256,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 34.c del RIPA, cuando dos buques se encuentran a la vista uno del otro en un paso o canal angosto y uno de ellos emite dos pitadas largas seguidas de una corta, significa que el buque emisor de las señales:",
     "answers": [
@@ -12280,7 +12280,7 @@ const questions = [
     "correctAnswerId": "b"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 7 del RIPA, riesgo de abordaje, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
@@ -12304,7 +12304,7 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 17 del RIPA, maniobra del buque que sigue a rumbo, cuando uno de los dos buques deba mantenerse apartado de la derrota del otro, este ultimo:",
     "answers": [
@@ -12328,7 +12328,7 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque:",
     "answers": [
@@ -36040,7 +36040,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes vigilancias NO se debe realizar durante el fondeo?",
     "answers": [
@@ -36064,7 +36064,7 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes afirmaciones NO es correcta respecto a las medidas a tomar a bordo con mal tiempo?",
     "answers": [
@@ -43208,3 +43208,4 @@ seed().catch((e) => {
   console.error(e);
   process.exit(1);
 });
+
