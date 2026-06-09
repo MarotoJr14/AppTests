@@ -7696,8 +7696,8 @@ const questions = [
     "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "legislacion",
+    "topicName": "Legislación",
     "statement": "En los tramos de costa que no estén balizados como zona de baño, franja que ocupa 200 metros en las playas y 50 metros en el resto de la costa:",
     "answers": [
       {
@@ -7717,12 +7717,12 @@ const questions = [
         "text": "No hay limitaciones, siempre que se adopten las precauciones necesarias para evitar riesgo a la seguridad de la vida humana en la mar."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
-    "statement": "Las embarcaciones deportivas en el interior de los puertos y sus canales de acceso:",
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "Las embarcaciones deportivas en el interior de los puertos y sus canales de acceso:"
     "answers": [
       {
         "id": "a",
@@ -7741,11 +7741,11 @@ const questions = [
         "text": "Solo están obligados a navegar a velocidades que no formen olas que puedan producir situaciones peligrosas para embarcaciones de pequeño porte."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "Las marcas laterales de babor de la región A:",
     "answers": [
       {
@@ -7765,11 +7765,11 @@ const questions = [
         "text": "Tienen forma cónica, de castillete o espeque y son de color verde."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "Podemos distinguir las marcas de peligro aislado de las demás porque son:",
     "answers": [
       {
@@ -7789,11 +7789,11 @@ const questions = [
         "text": "Negras, con una o más bandas anchas horizontales rojas. Su marca de tope está formada por dos esferas rojas."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "La marca de tope de una marca de aguas navegables será:",
     "answers": [
       {
@@ -7813,11 +7813,11 @@ const questions = [
         "text": "Una cruz."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "La marca cardinal Este se caracteriza por tener:",
     "answers": [
       {
@@ -7837,11 +7837,11 @@ const questions = [
         "text": "Dos conos negros superpuestos con los vértices hacia arriba y una banda negra encima de banda amarilla."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "La marca de tope de una marca especial será:",
     "answers": [
       {
@@ -7861,11 +7861,11 @@ const questions = [
         "text": "Un aspa amarilla y negra."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "Respecto de los buques dedicados a la pesca en flotilla, la Regla 1 del RIPA establece que no se impedirá que el Gobierno de cualquier Estado pueda aplicar reglas especiales en cuanto a utilizar:",
     "answers": [
       {
@@ -7885,11 +7885,11 @@ const questions = [
         "text": "Señales de pito adicionales a aquellas dispuestas en el RIPA."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "Según la Regla 23 del RIPA, los aerodeslizadores, cuando operen en la condición sin desplazamiento, exhibirán:",
     "answers": [
       {
@@ -7909,11 +7909,11 @@ const questions = [
         "text": "Luces de remolque."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "La Regla 35 del RIPA determina que un buque sin gobierno o con su capacidad de maniobra restringida, un buque restringido por su calado, un buque de vela, un buque dedicado a la pesca y todo buque dedicado a remolcar o a empujar a otro buque, en las proximidades o dentro de una zona de visibilidad reducida, ya sea de día o de noche, emitirá las siguientes señales:",
     "answers": [
       {
@@ -7933,12 +7933,12 @@ const questions = [
         "text": "A intervalos que no excedan de dos minutos tres pitadas consecutivas, a saber, dos largas seguidas por una corta."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
-    "statement": "Según la Regla 12.a.i) del RIPA, cuando dos buques de vela que se encuentren a la vista se aproximen uno al otro con riesgo de abordaje, y cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor:",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
+    "statement": "Según la Regla 12.a.i) del RIPA, cuando dos buques de vela que se encuentren a la vista se aproximen uno al otro con riesgo de abordaje, y cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor:"
     "answers": [
       {
         "id": "a",
@@ -7957,12 +7957,12 @@ const questions = [
         "text": "No está previsto este caso, por lo que ambos buques ejercerán la máxima precaución."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
-    "statement": "En caso de peligro y de que necesitemos ayuda:",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
+    "statement": "En caso de peligro y de que necesitemos ayuda:"
     "answers": [
       {
         "id": "a",
@@ -7981,11 +7981,11 @@ const questions = [
         "text": "Exhibiremos una luz amarilla de centelleos todo horizonte, junto con una marca bicónica."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "Un buque de navegación fluvial (no marítima) se encuentra navegando por un lago. En general, y de acuerdo con la Regla 1 del RIPA, de dicho buque podemos afirmar que:",
     "answers": [
       {
@@ -8005,11 +8005,11 @@ const questions = [
         "text": "Se le aplicará el RIPA si el lago por donde navega tiene comunicación con alta mar y es navegable por los buques de navegación marítima."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "Según el anexo IV del RIPA, ¿cuál de estas señales debería utilizar una embarcación propulsada a vela en caso de peligro?",
     "answers": [
       {
@@ -8029,11 +8029,11 @@ const questions = [
         "text": "Las banderas “N” y “A” del Código Internacional de Señales."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "La Regla 27 del RIPA determina que un buque sin gobierno ni arrancada exhibirá:",
     "answers": [
       {
@@ -8053,11 +8053,11 @@ const questions = [
         "text": "Dos luces rojas todo horizonte en línea vertical, en el lugar más visible, y dos bolas o marcas similares en línea vertical, en el lugar más visible."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "Según la Regla 6 del RIPA, todo buque navegará en todo momento a una velocidad de seguridad tal que:",
     "answers": [
       {
@@ -8077,11 +8077,11 @@ const questions = [
         "text": "Le permita ejecutar la maniobra adecuada y eficaz para evitar el abordaje y pararse a la distancia que sea apropiada a las circunstancias y condiciones del momento."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
     "statement": "La Regla 26 c) del RIPA establece que un buque dedicado a la pesca, que no sea de arrastre, exhibirá:",
     "answers": [
       {
@@ -8101,11 +8101,11 @@ const questions = [
         "text": "Dos luces todo horizonte en línea vertical, roja la superior y blanca la inferior, o una marca consistente en dos conos unidos por sus vértices en línea vertical, uno sobre el otro."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
     "statement": "Con una hélice dextrógira, queriendo ciabogar a estribor, meteremos inicialmente el timón:",
     "answers": [
       {
@@ -8125,11 +8125,11 @@ const questions = [
         "text": "En la dirección del punto al que nos dirigimos."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
     "statement": "Recoger por medio de vueltas un cabo o cable, se conoce como:",
     "answers": [
       {
@@ -8149,11 +8149,11 @@ const questions = [
         "text": "Adujar."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
     "statement": "El tetraedro del fuego NO tiene como factor:",
     "answers": [
       {
@@ -8173,11 +8173,11 @@ const questions = [
         "text": "Reacción en cadena."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
     "statement": "Si tras un abordaje los dos barcos quedan unidos:",
     "answers": [
       {
@@ -8197,7 +8197,7 @@ const questions = [
         "text": "Daremos inmediatamente atrás para separarnos de la otra embarcación."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
     "topicId": "emergencias_mar",
@@ -9231,7 +9231,6 @@ const questions = [
     ],
     "correctAnswerId": "a"
   },
-  // ! ERRORID
   {
     "topicId": "meteorologia",
     "topicName": "Meteorología",
@@ -9280,7 +9279,6 @@ const questions = [
     ],
     "correctAnswerId": "a"
   },
-  // ! ERRORID
   {
     "topicId": "meteorologia",
     "topicName": "Meteorología",
