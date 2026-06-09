@@ -4,7 +4,7 @@
 // Place your Firebase service account JSON as serviceAccount.json (same folder).
 
 const admin = require('firebase-admin');
-const serviceAccount = require('./serviceAccount.json');
+const serviceAccount = require('./blue-sailing-test-firebase-adminsdk-fbsvc-dadd2dc472.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
