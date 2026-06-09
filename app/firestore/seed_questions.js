@@ -8608,8 +8608,8 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
     "statement": "¿Cuál de los siguientes aspectos NO influirá en la elección del lugar de fondeo?",
     "answers": [
       {
@@ -8629,11 +8629,11 @@ const questions = [
         "text": "La regulación sobre fondeo aplicable en la zona a elegir."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
     "statement": "Una roldana es un elemento:",
     "answers": [
       {
@@ -8653,11 +8653,11 @@ const questions = [
         "text": "Fuerentemente asegurado a la cubierta, que sirve para hacer firmes los cabos de amarre al atracar."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad en la Mar",
     "statement": "Medida a tomar en caso de hipotermia:",
     "answers": [
       {
@@ -8677,11 +8677,11 @@ const questions = [
         "text": "Quitar toda la ropa mojada frotando con fuerza."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad en la Mar",
     "statement": "El reflector radar:",
     "answers": [
       {
@@ -8701,11 +8701,11 @@ const questions = [
         "text": "Es un dispositivo pasivo o activo que evita las interferencias de otros equipos electrónicos con la señal radar."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad en la Mar",
     "statement": "Cuando tomemos remolque, ¿cómo lo amarraremos?",
     "answers": [
       {
@@ -8725,11 +8725,11 @@ const questions = [
         "text": "Mediante cualquier nudo, todos son válidos."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad en la Mar",
     "statement": "Las aguas someras son:",
     "answers": [
       {
@@ -8749,12 +8749,12 @@ const questions = [
         "text": "Aguas poco profundas que no suponen un peligro para la navegación."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
-    "statement": "De conformidad con la Regala 33.1 del Capítulo V del Convenio Internacional SOLAS, el capitán de un buque que, estando en el mar, reciba una señal que le indique que hay personas en peligro en el mar:",
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "De conformidad con la Regla 33.1 del Capítulo V del Convenio Internacional SOLAS, el capitán de un buque que, estando en el mar, reciba una señal que le indique que hay personas en peligro en el mar:",
     "answers": [
       {
         "id": "a",
@@ -8773,11 +8773,11 @@ const questions = [
         "text": "La obligación de prestar auxilio depende de la condición jurídica de las personas en peligro."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "legislacion",
+    "topicName": "Legislación",
     "statement": "En los tramos de costa que no estén balizados como zona de baño:",
     "answers": [
       {
@@ -8797,11 +8797,11 @@ const questions = [
         "text": "El lanzamiento o varada de embarcaciones deberá hacerse a través de canales debidamente señalizados."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "Los colores de la marca cardinal Norte son:",
     "answers": [
       {
@@ -8821,11 +8821,11 @@ const questions = [
         "text": "Rojo sobre fondo verde."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "Las marcas de peligro aislado se colocan:",
     "answers": [
       {
@@ -8845,11 +8845,11 @@ const questions = [
         "text": "Próximas a un peligro, siempre junto a una marca cardinal que indique la posición de dicho peligro."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "La marca de tope de una marca de aguas navegables será de color:",
     "answers": [
       {
@@ -8869,11 +8869,11 @@ const questions = [
         "text": "Rojo."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "La forma de las marcas laterales en la región A puede ser:",
     "answers": [
       {
@@ -8893,11 +8893,11 @@ const questions = [
         "text": "Cilíndrica o cónica."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
     "statement": "Una marca especial será de color:",
     "answers": [
       {
@@ -8917,11 +8917,11 @@ const questions = [
         "text": "Rojo y amarillo."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Estando a bordo de nuestra embarcación necesitamos pedir ayuda, ¿cuál de las siguientes señales sería correcta de acuerdo con el anexo IV de señales de peligro del RIPA?",
     "answers": [
       {
@@ -8941,11 +8941,11 @@ const questions = [
         "text": "Enviar una alerta de socorro mediante llamada selectiva digital, a través del canal 70 de VHF."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Según la Regla 18.b del RIPA, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
     "answers": [
       {
@@ -8965,11 +8965,11 @@ const questions = [
         "text": "Un buque sin gobierno, un buque con capacidad de maniobra restringida o un buque dedicado a la pesca."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Si se debe navegar a lo largo de un paso o canal angosto, siempre que se pueda hacer sin que entrañe peligro, ¿cómo se debe hacer, según la Regla 9.a del RIPA?",
     "answers": [
       {
@@ -8989,11 +8989,11 @@ const questions = [
         "text": "Manteniéndose lo más cerca posible del límite exterior del paso o canal que queda por su costado de estribor."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "La Regla 3 del RIPA define a un buque restringido por su calado como:",
     "answers": [
       {
@@ -9013,11 +9013,11 @@ const questions = [
         "text": "Un buque de propulsión mecánica con capacidad de maniobra restringida."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Según establece la Regla 14.c del RIPA, cuando un buque abrigue dudas de si existe una situación de vuelta encontrada:",
     "answers": [
       {
@@ -9037,11 +9037,11 @@ const questions = [
         "text": "Se pondrá en comunicación con el otro buque a través del canal 16 de VHF, indicándole que ambos deberán caer a babor."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Según la Regla 24.e del RIPA, todo buque u objeto remolcado, que sea visible y no esté parcialmente sumergido, exhibirá:",
     "answers": [
       {
@@ -9061,11 +9061,11 @@ const questions = [
         "text": "Una marca cilíndrica en el lugar más visible."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de abordajes",
     "statement": "Encontrándonos en navegación, se nos hace de noche y la tripulación a bordo de la embarcación deseamos descansar. Para ello, paramos el motor y encendemos una luz advirtiendo de nuestra presencia, tras lo cual nos ponemos todos a echar una cabezada. ¿Es correcto este proceder?",
     "answers": [
       {
@@ -9085,35 +9085,35 @@ const questions = [
         "text": "No, debemos encender tres luces rojas todo horizonte como prescribe la Regla 27 del RIPA."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento de Abordajes",
     "statement": "Según la Regla 30 del RIPA determina que un buque fondeado exhibirá en el lugar más visible:",
     "answers": [
       {
         "id": "a",
-        "text": "i) en la parte de proa, una luz roja todo horizonte o una bola; y ii) en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado i), una luz roja todo horizonte."
+        "text": "En la parte de proa, una luz roja todo horizonte o una bola; y en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado , una luz roja todo horizonte."
       },
       {
         "id": "b",
-        "text": "i) en la parte de proa, una luz roja todo horizonte o un cilindro; y ii) en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado i), una luz roja todo horizonte."
+        "text": "En la parte de proa, una luz roja todo horizonte o un cilindro; y en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado , una luz roja todo horizonte."
       },
       {
         "id": "c",
-        "text": "i) en la parte de proa, una luz blanca todo horizonte o una bola; y ii) en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado i), una luz blanca todo horizonte."
+        "text": "En la parte de proa, una luz blanca todo horizonte o una bola; y en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado , una luz blanca todo horizonte."
       },
       {
         "id": "d",
-        "text": "i) en la parte de proa, una luz roja todo horizonte o una marca bicónica; y ii) en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado i), una luz blanca todo horizonte."
+        "text": "En la parte de proa, una luz roja todo horizonte o una marca bicónica; y en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado , una luz blanca todo horizonte."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "C"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
     "statement": "Nos abarloamos a otra embarcación si:",
     "answers": [
       {
@@ -9133,11 +9133,11 @@ const questions = [
         "text": "Atracamos popa con popa."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
     "statement": "Si se amarra una embarcación de costado al muelle, ¿cuál de los siguientes cabos se da por el costado opuesto al muelle, y es muy útil para ayudar a desatracar?",
     "answers": [
       {
@@ -9157,11 +9157,11 @@ const questions = [
         "text": "Spring."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
     "statement": "Si necesitamos una consulta médica mientras estamos navegando, debemos contactar con:",
     "answers": [
       {
@@ -9181,11 +9181,11 @@ const questions = [
         "text": "El Centro Radio-Médico Español, bien por radiotelefonía (onda corta o media) o bien por teléfono."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
     "statement": "Según la clasificación UNE de los incendios, ¿cuál de estas afirmaciones es correcta?",
     "answers": [
       {
@@ -9205,11 +9205,11 @@ const questions = [
         "text": "Clase B: fuegos de gases."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en el mar",
     "statement": "Ante la certeza de una vía de agua, ¿cuál de las siguientes actuaciones NO es CORRECTA?",
     "answers": [
       {
@@ -9229,8 +9229,9 @@ const questions = [
         "text": "Emplear la bomba de refrigeración del motor para achicar el agua si ésta tiene la tubería de aspiración próxima al compartimento inundado."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
+  // ! ERRORID
   {
     "topicId": "meteorologia",
     "topicName": "Meteorología",
@@ -9256,8 +9257,8 @@ const questions = [
     "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "La intensidad del viento:",
     "answers": [
       {
@@ -9277,8 +9278,9 @@ const questions = [
         "text": "Es función de la presión hidrostática del agua y de su salinidad."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
+  // ! ERRORID
   {
     "topicId": "meteorologia",
     "topicName": "Meteorología",
@@ -9304,8 +9306,8 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "¿Qué nos indica una subida brusca y rápida en la presión indicada por el barómetro aneroidc?",
     "answers": [
       {
@@ -9325,11 +9327,11 @@ const questions = [
         "text": "Una tendencia a la mejoría sin poder asegurar su persistencia."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "La corrección total es:",
     "answers": [
       {
@@ -9349,11 +9351,11 @@ const questions = [
         "text": "El ángulo que forma la dirección de la proa con el meridiano verdadero del lugar de signo opuesto al mismo."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "En función del meridiano que consideremos para medir el rumbo, ¿qué tres clases de rumbo existen?",
     "answers": [
       {
@@ -9373,11 +9375,11 @@ const questions = [
         "text": "el rumbo verdadero, el rumbo de aguja y el rumbo de superficie."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "La conversión del rumbo S60E a rumbo circular es:",
     "answers": [
       {
@@ -9397,11 +9399,11 @@ const questions = [
         "text": "240°."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "Señale cuál de las afirmaciones siguientes NO es CORRECTA:",
     "answers": [
       {
@@ -9421,11 +9423,11 @@ const questions = [
         "text": "Las marcaciones se cuentan de 0° a 360° en el sentido de las agujas del reloj."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "¿Cuál de las siguientes afirmaciones sobre el desvío de la aguja es cierta?",
     "answers": [
       {
@@ -9445,11 +9447,11 @@ const questions = [
         "text": "Depende de la situación geográfica cuando la embarcación navega."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "Una embarcación que se sitúa en la enfilación del faro de Cabo Roche y el faro de Cabo Trafalgar obtiene una demora de aguja de este último faro igual a 323º. Calcular la corrección total (Ct) de la aguja náutica.",
     "answers": [
       {
@@ -9469,11 +9471,11 @@ const questions = [
         "text": "Ct = 2º (+)."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "Para una embarcación que se sitúa en la marca especial al Este de la Línea de la Concepción, calcular el rumbo de aguja (Ra) para pasar a 4,2 millas del faro de Punta Almina, teniendo como desvío de aguja para ese rumbo 3,5ºE y declinación magnética la obtenida en la carta náutica de enseñanza del Estrecho de Gibraltar para 2021.",
     "answers": [
       {
@@ -9493,11 +9495,11 @@ const questions = [
         "text": "Ra = 157°."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "Calcular la situación verdadera de una embarcación que se encuentra dentro de la zona prohibida de pesca a 3,5 millas del faro de Punta de Gracia y en la demora verdadera 084º del faro de Punta Paloma.",
     "answers": [
       {
@@ -9517,11 +9519,11 @@ const questions = [
         "text": "1 = 36° 03,2’ N L = 005° 51,7’ W"
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "Situada una embarcación al 350º verdadero y a 5 millas del faro de Punta Malabata, se emprende a las 16 horas 18 minutos navegación con rumbo verdadero 307º con una velocidad de 12 nudos. Calcular la situación de estima a las 17 horas 8 minutos.",
     "answers": [
       {
@@ -9541,7 +9543,7 @@ const questions = [
         "text": "1 = 36° 00,2’ N L = 005° 55,8’ W"
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
     "topicId": "nomenclatura_náutica",
