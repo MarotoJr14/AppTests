@@ -16,10 +16,21 @@ class AuthService {
   static const Duration _codeReuseAfter = Duration(days: 365);
 
   Future<UserCredential> signIn(String email, String password) async {
-    return _auth.signInWithEmailAndPassword(
+    final cred = await _auth.signInWithEmailAndPassword(
       email: email.trim(),
       password: password,
     );
+
+    if (!cred.user!.emailVerified) {
+      await _auth.signOut();
+      throw const AuthException('Tu correo no está verificado. Revisa tu bandeja y confirma tu email.');
+    }
+
+    return cred;
+  }
+
+  Future<void> sendEmailVerification(User user) async {
+    await user.sendEmailVerification();
   }
 
   /// Registro con código de empresa (en Firestore).
@@ -52,6 +63,7 @@ class AuthService {
         password: password,
       );
       await _finalizeRegistrationCode(emailNorm: emailNorm, codeNorm: codeNorm);
+      await cred.user!.sendEmailVerification();
       return cred;
     } on FirebaseAuthException {
       await _releaseRegistrationCodeReservation(emailNorm: emailNorm, codeNorm: codeNorm);
@@ -64,23 +76,30 @@ class AuthService {
 
   Future<void> sendPasswordReset(String email) async {
     final emailNorm = email.trim().toLowerCase();
-    try {
-      // Verify that the email belongs to a real user in our `users` collection
-      final snap = await _db
-          .collection('users')
-          .where('email', isEqualTo: emailNorm)
-          .limit(1)
-          .get();
-      if (snap.docs.isEmpty) {
-        throw const AuthException('No existe ningún usuario con ese correo electrónico.');
-      }
+    if (emailNorm.isEmpty) {
+      throw const AuthException('Introduce tu correo electrónico.');
+    }
 
+    final emailRegex = RegExp(r"^[^@\s]+@[^@\s]+\.[^@\s]+");
+    if (!emailRegex.hasMatch(emailNorm)) {
+      throw const AuthException('Correo electrónico no válido.');
+    }
+
+    try {
       await _auth.sendPasswordResetEmail(email: emailNorm);
     } on FirebaseAuthException catch (e) {
-      if (e.code == 'user-not-found') {
-        throw const AuthException('No existe ningún usuario con ese correo electrónico.');
+      switch (e.code) {
+        case 'invalid-email':
+          throw const AuthException('Correo electrónico no válido.');
+        case 'user-not-found':
+          throw const AuthException('No existe ningún usuario con ese correo electrónico.');
+        case 'too-many-requests':
+          throw const AuthException('Demasiados intentos. Espera un momento e inténtalo de nuevo.');
+        case 'network-request-failed':
+          throw const AuthException('Error de conexión. Comprueba tu red e inténtalo de nuevo.');
+        default:
+          rethrow;
       }
-      rethrow;
     }
   }
 
@@ -91,7 +110,7 @@ class AuthService {
     final snap = await ref.get();
     if (!snap.exists) {
       await ref.set({
-        'email': user.email,
+        'email': user.email?.trim().toLowerCase(),
         'createdAt': FieldValue.serverTimestamp(),
       });
     }

@@ -89,8 +89,17 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             labelText: 'Correo electrónico',
             prefixIcon: Icon(Icons.mail_outline, color: AppTheme.onSurfaceSub),
           ),
-          validator: (v) =>
-          (v == null || v.isEmpty) ? 'Introduce tu correo' : null,
+          validator: (v) {
+            if (v == null || v.trim().isEmpty) {
+              return 'Introduce tu correo';
+            }
+            final email = v.trim();
+            final emailRegex = RegExp(r"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            if (!emailRegex.hasMatch(email)) {
+              return 'Correo electrónico no válido';
+            }
+            return null;
+          },
         ),
         if (_error != null) ...[
           const SizedBox(height: 16),

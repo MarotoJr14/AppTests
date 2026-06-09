@@ -46,5 +46,6 @@ app.*.map.json
 
 # Firebase sensitive files
 firestore/serviceAccount.json
+firestore/blue-sailing-test-firebase-adminsdk-fbsvc-dadd2dc472.json
 firestore/node_modules/
 firestore/package-lock.json

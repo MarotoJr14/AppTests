@@ -1,0 +1,1705 @@
+[
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué es el codaste?",
+    "answers": [
+      { "id": "a", "text": "Es la prolongación vertical o inclinada de la quilla en la parte de proa." },
+      { "id": "b", "text": "Es la prolongación vertical o inclinada de la quilla en su parte de popa." },
+      { "id": "c", "text": "Es la prolongación horizontal de la quilla en la parte de proa." },
+      { "id": "d", "text": "Es la prolongación horizontal de la quilla en su parte de popa." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué son los grifos de fondo?",
+    "answers": [
+      { "id": "a", "text": "Son válvulas colocadas en el interior del casco, bajo la linea de flotación." },
+      { "id": "b", "text": "Son orificios practicados en el casco, generalmente en la obra muerta." },
+      { "id": "c", "text": "Son aparatos destinados a bombear el agua expulsándola a la mar." },
+      { "id": "d", "text": "Son válvulas colocadas en el interior del casco, por encima de la línea de flotación." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué es el capacete?",
+    "answers": [
+      { "id": "a", "text": "Una corona con muescas donde se acoplan los eslabones de la cadena." },
+      { "id": "b", "text": "La parte plana de la uña del ancla." },
+      { "id": "c", "text": "La pieza longitudinal situada en la parte superior de la borda." },
+      { "id": "d", "text": "La pieza en forma de capuchón que protege el orifico donde va el eje, para evitar la entrada de agua." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué es la bocina de la hélice?",
+    "answers": [
+      { "id": "a", "text": "El orificio por donde el eje atraviesa el casco." },
+      { "id": "b", "text": "La pieza en forma de capuchón que protege el orificio donde va el eje de la hélice." },
+      { "id": "c", "text": "El punto de apoyo del eje del timón en el codaste." },
+      { "id": "d", "text": "La barra donde se monta la hélice y que la hace girar." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "El nudo \"vuelta de rezón\" se utiliza para:",
+    "answers": [
+      { "id": "a", "text": "Amarrar una defensa." },
+      { "id": "b", "text": "Afirmar una amarra a una argolla." },
+      { "id": "c", "text": "Unir por sus chicotes dos cabos de distinta mena." },
+      { "id": "d", "text": "Unir por sus chicotes dos cabos de una misma mena." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Qué es el tenedero?",
+    "answers": [
+      { "id": "a", "text": "La superficie del fondo marino donde se afirma el ancla." },
+      { "id": "b", "text": "Un peso cilíndrico unido a un cabo que se deja caer hasta el fondo para conocer el tipo de fondo." },
+      { "id": "c", "text": "Un palo o percha larga con un gancho metálico en un extremo." },
+      { "id": "d", "text": "El canto superior del costado de una embarcación." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "En caso de cambiar de rumbo durante un remolque, la embarcación remolcada, por lo general:",
+    "answers": [
+      { "id": "a", "text": "Mantendrá el timón a la vía en todo momento para facilitar la travesía." },
+      { "id": "b", "text": "Gobernará al rumbo del remolcador facilitando la travesía." },
+      { "id": "c", "text": "Gobernará con pequeñas variaciones de rumbo hacia la banda contraria del remolcador facilitando la evolución." },
+      { "id": "d", "text": "Gobernará indistintamente, no es posible facilitar la maniobra de remolque con cambios de rumbo." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Las aguas someras son:",
+    "answers": [
+      { "id": "a", "text": "Aquellas aguas muy profundas que permiten la libre navegación." },
+      { "id": "b", "text": "Aguas poco profundas en las que nuestra embarcación puede correr riesgo de varar." },
+      { "id": "c", "text": "Aguas maritimas donde el tráfico es muy denso y existe el riesgo de abordaje." },
+      { "id": "d", "text": "Aguas marítimas donde el tráfico es poco denso." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Las maniobras de aproximación más habituales cuando se ve al náufrago son:",
+    "answers": [
+      { "id": "a", "text": "Curva de evolución de Petersoon y maniobra de Boutakoν." },
+      { "id": "b", "text": "Curva de evolución de Petersoon y maniobra de Korbachov." },
+      { "id": "c", "text": "Curva de evolución de Anderson y maniobra de Boutakoν." },
+      { "id": "d", "text": "Curva de evolución de Korbachov y maniobra de Anderson." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Se podrá evitar o reducir el balanceo de una embarcación:",
+    "answers": [
+      { "id": "a", "text": "Cruzándose a la mar." },
+      { "id": "b", "text": "Atravesándose a la mar." },
+      { "id": "c", "text": "Modificando el rumbo." },
+      { "id": "d", "text": "El balanceo es una característica de la estabilidad estática transversal de la embarcación, limitado por su diseño y que no varía con el gobierno de ésta." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "¿Puede una embarcación de recreo española en puertos nacionales izar la bandera reconocida en el Estatuto de la Comunidad Autonóma de Madrid junto con el Pabellón Nacional?",
+    "answers": [
+      { "id": "a", "text": "No, sólo podrá izarse la bandera de la Comunidad Autónoma de matriculación de la embarcación." },
+      { "id": "b", "text": "Solo si el propietario tiene residencia en la Comunidad de Madrid." },
+      { "id": "c", "text": "Nunca, la posiblicad de izar banderas autonómicas sólo está reconocida a las Comunidades Autonómas históricas." },
+      { "id": "d", "text": "La norma no dice nada al respecto." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "¿Cuál de los siguientes espacios NO está considerado como ZEΡΙΜ?",
+    "answers": [
+      { "id": "a", "text": "La Isla de Alborán." },
+      { "id": "b", "text": "El archipiélago de Cabrera." },
+      { "id": "c", "text": "Las islas Sisargas." },
+      { "id": "d", "text": "Las islas Columbretes." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿A qué nos referimos cuando hablamos de ritmo centelleante rápido de la luz blanca de una marca cardinal?",
+    "answers": [
+      { "id": "a", "text": "La cadencia es de menos de cuarenta centelleos por minuto." },
+      { "id": "b", "text": "La cadencia es de cincuenta o sesenta centelleos por minuto." },
+      { "id": "c", "text": "La cadencia es de cien o ciento veinte centelleos por minuto." },
+      { "id": "d", "text": "La cadencia es de cuarenta centelleos por minuto." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿Qué indica una marca de peligro aislado?",
+    "answers": [
+      { "id": "a", "text": "El tamaño del peligro." },
+      { "id": "b", "text": "La profundidad a la que se encuentra el peligro." },
+      { "id": "c", "text": "Un peligro enteramente rodeado por todas partes de aguas navegables." },
+      { "id": "d", "text": "La distancia de separación a la que hay que dejar la señal." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Una marca especial:",
+    "answers": [
+      { "id": "a", "text": "Siempre tiene luz y marca de tope." },
+      { "id": "b", "text": "Siempre tiene luz." },
+      { "id": "c", "text": "Siempre tiene marca de tope." },
+      { "id": "d", "text": "Siempre es de color amarillo." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿Cómo se disponen las bandas de color en la marca de tope de una marca cardinal?",
+    "answers": [
+      { "id": "a", "text": "En la marca cardinal Norte, negro sobre amarillo." },
+      { "id": "b", "text": "En la marca cardinal Norte, amarillo sobre negro." },
+      { "id": "c", "text": "En la marca cardinal Este, amarillo con una ancha banda horizontal negra." },
+      { "id": "d", "text": "En la marca cardinal Oeste, negro con una ancha banda amarilla horizontal." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Si tiene luz, ¿cómo es el ritmo centelleante de la señal luminosa de la marca cardinal Norte?",
+    "answers": [
+      { "id": "a", "text": "Luz amarilla centelleante continua." },
+      { "id": "b", "text": "Luz blanca centelleante continua, muy rápido o rápido." },
+      { "id": "c", "text": "Luz blanca, tres centelleos muy rápidos seguidos de periodo de oscuridad." },
+      { "id": "d", "text": "Luz blanca, seis centelleos muy rápidos seguidos de periodo de oscuridad." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 32 del RIPA, una \"pitada corta\" significa:",
+    "answers": [
+      { "id": "a", "text": "Un sonido de una duración aproximada de un segundo." },
+      { "id": "b", "text": "Un sonido de corta duración." },
+      { "id": "c", "text": "Un sonido de una duración variable." },
+      { "id": "d", "text": "Un sonido de una duración aproximada de dos segundos." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 12 del RIPA, cuando dos buques de vela se aproximen el uno al otro con riesgo de abordaje, y cada uno de ellos reciba el viento por bandas contrarias:",
+    "answers": [
+      { "id": "a", "text": "El que reciba el viento por estribor se mantendrá apartado de la derrota del otro." },
+      { "id": "b", "text": "El que reciba el viento por babor se mantendrá apartado de la derrota del otro." },
+      { "id": "c", "text": "Ninguno de los dos está obligado a maniobrar." },
+      { "id": "d", "text": "El que reciba el viento por estribor deberá caer a babor siempre." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales NO es indicativa de peligro y necesidad de ayuda?",
+    "answers": [
+      { "id": "a", "text": "Una bengala de mano de color rojo." },
+      { "id": "b", "text": "Una alerta de socorro en el canal 70 de VHF." },
+      { "id": "c", "text": "La señal \"NC\" del Código Internacional de Señales." },
+      { "id": "d", "text": "Una señal fumígena que produzca una densa humareda de color verde." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "De acuerdo a la regla 33 del RIPA, los buques de eslora igual o superior a 12 m e inferior a 20 m irán dotados obligatoriamente de:",
+    "answers": [
+      { "id": "a", "text": "Un gong." },
+      { "id": "b", "text": "Una campana y un pito." },
+      { "id": "c", "text": "Un gong y una campana." },
+      { "id": "d", "text": "Un pito." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "La regla 13 del RIPA, que regula la conducta del buque que \"alcanza\" se aplica a:",
+    "answers": [
+      { "id": "a", "text": "Todos los buques que se encuentren a la vista uno del otro." },
+      { "id": "b", "text": "Sólo a los buques de propulsión mecánica que se encuentren a la vista uno de otro." },
+      { "id": "c", "text": "Todos los buques en cualquier condición de visibilidad." },
+      { "id": "d", "text": "Todos los buques en cualquier condición de visibilidad, excepto si se encuentran en un paso o canal angosto." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la regla 25 del RIPA, un buque que navegue a vela, when sea también propulsado mecánicamente, deberá exhibir a proa en el lugar más visible:",
+    "answers": [
+      { "id": "a", "text": "Una esfera negra." },
+      { "id": "b", "text": "Una marca bicónica." },
+      { "id": "c", "text": "Una marca cónica con el vértice hacia abajo." },
+      { "id": "d", "text": "Una marca cónica con el vértice hacia arriba." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales NO es indicativa de peligro y necesidad de ayuda?",
+    "answers": [
+      { "id": "a", "text": "Una bengala de mano que produzca una luz roja." },
+      { "id": "b", "text": "Granadas que despidan estrellas rojas." },
+      { "id": "c", "text": "Llamaradas a bordo." },
+      { "id": "d", "text": "Un sonido discontinuo producido por cualquier aparato de señales de niebla." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 3 del RIPA, un buque de vela que utiliza simultáneamente su maquinaria propulsora mientras se dedica a la pesca con curricán se considera:",
+    "answers": [
+      { "id": "a", "text": "Un buque dedicado a la pesca." },
+      { "id": "b", "text": "Un buque de vela." },
+      { "id": "c", "text": "Un buque de propulsión mecánica." },
+      { "id": "d", "text": "Un buque de propulsión mecánica con capacidad de maniobra restringida por razón se su actividad." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través la sirena de niebla de otro buque, deberá:",
+    "answers": [
+      { "id": "a", "text": "Reducir su velocidad a una velocidad de seguridad adaptada a las condiciones y circunstancias de visibilidad reducida del momento y a la densidad del tráfico. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "b", "text": "Reducir su velocidad a una velocidad de seguridad adaptada a las condiciones y circunstancias de visibilidad reducida del momento, a la densidad del tráfico y, si dispone de radar, a las características, eficacia y limitaciones de éste. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "c", "text": "Reducir su velocidad hasta la minima de gobierno. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "d", "text": "La pregunta no está bien planteada porque, cuando en condiciones de visibilidad reducida un buque oiga, al parecer a proa de su través, la sirena de niebla de otro buque, considerara siempre que el riesgo de abordaje existe." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la regla 35 del RIPA, dentro de una zona de visibilidad reducida, ya sea de día o de noche, un buque de propulsión mecánica con arrancada emitirá:",
+    "answers": [
+      { "id": "a", "text": "Una pitada larga a intervalos que no excedan de 5 minutos." },
+      { "id": "b", "text": "Pitadas cortas a intervalos regulares." },
+      { "id": "c", "text": "Una pitada larga a intervalos irregulares." },
+      { "id": "d", "text": "Una pitada larga a intervalos que no excedan de 2 minutos." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "Las fases de la Curva de Evolución son:",
+    "answers": [
+      { "id": "a", "text": "Curva de maniobra, Curva variable y Curva deforme." },
+      { "id": "b", "text": "Fase de arrancada, Fase circular y Fase uniforme." },
+      { "id": "c", "text": "Fase de maniobra, Fase variable y Fase uniforme." },
+      { "id": "d", "text": "Fase de maniobra, Fase variable y Fase final." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "Como norma general, para atracar a un muelle es mucho más fácil hacerlo:",
+    "answers": [
+      { "id": "a", "text": "Popa al viento y a la corriente." },
+      { "id": "b", "text": "Proa al viento o a la corriente." },
+      { "id": "c", "text": "Con viento de estribor." },
+      { "id": "d", "text": "Con viento de popa." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "Para que un incendio se produzca y se mantenga, deben confluir la presencia de los siguientes factores:",
+    "answers": [
+      { "id": "a", "text": "Presencia de oxígeno, temperatura adecuada y reacción en cadena." },
+      { "id": "b", "text": "Temperatura de ignición, combustión y explosión." },
+      { "id": "c", "text": "Materiales combustibles, presencia de oxígeno, temperatura adecuada y reacción en cadena." },
+      { "id": "d", "text": "Materiales sólidos, presencia de oxígeno y temperatura de ignición." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "En caso de via de agua grande es siempre recomendable:",
+    "answers": [
+      { "id": "a", "text": "Activar los extintores." },
+      { "id": "b", "text": "De ser posible, pasar un toldo o plástico bien amarrado por el exterior del casco para taponar la vía de agua en la medida de lo posible." },
+      { "id": "c", "text": "Poner un tapón de madera." },
+      { "id": "d", "text": "Izar la mayor." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "La aplicación de un torniquete debe ser:",
+    "answers": [
+      { "id": "a", "text": "No se debe hacer nunca un torniquete a bordo." },
+      { "id": "b", "text": "Temporal, máximo de tres horas y aflojando cada cuarto de hora." },
+      { "id": "c", "text": "Temporal, hasta que lleguemos a un hospital." },
+      { "id": "d", "text": "Temporal, hasta que lleguemos a puerto." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Se considera como presión atmosférica normal la que se produce al nivel del mar y es de:",
+    "answers": [
+      { "id": "a", "text": "1013,25 hPa." },
+      { "id": "b", "text": "760 hPa." },
+      { "id": "c", "text": "1013,25 Pa." },
+      { "id": "d", "text": "760 atm." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "¿Cómo se llaman las líneas que unen los puntos de igual presión en un momento determinado?",
+    "answers": [
+      { "id": "a", "text": "Isobatas." },
+      { "id": "b", "text": "Isométricas." },
+      { "id": "c", "text": "Isobaras." },
+      { "id": "d", "text": "Isotermas." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "La suma vectorial del viento real y el viento de la marcha nos da como resultado:",
+    "answers": [
+      { "id": "a", "text": "El viento verdadero." },
+      { "id": "b", "text": "El viento real." },
+      { "id": "c", "text": "El viento aparente." },
+      { "id": "d", "text": "El sotavento." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Si el viento refresca, significa que:",
+    "answers": [
+      { "id": "a", "text": "Está aumentando su fuerza.." },
+      { "id": "b", "text": "Está disminuyendo su temperatura." },
+      { "id": "c", "text": "Está cambiando de dirección." },
+      { "id": "d", "text": "Está rolando." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "Los veriles, son lineas de igual:",
+    "answers": [
+      { "id": "a", "text": "Fondo." },
+      { "id": "b", "text": "Presión." },
+      { "id": "c", "text": "Temperatura." },
+      { "id": "d", "text": "No existen." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "¿Cuáles de los siguientes elementos de la esfera terrestre forman círculos menores?",
+    "answers": [
+      { "id": "a", "text": "Los meridianos." },
+      { "id": "b", "text": "El Ecuador." },
+      { "id": "c", "text": "Los paralelos." },
+      { "id": "d", "text": "Los polos." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "Se denomina a la décima parte de una milla náutica:",
+    "answers": [
+      { "id": "a", "text": "Yarda." },
+      { "id": "b", "text": "Cable." },
+      { "id": "c", "text": "Hectómetro." },
+      { "id": "d", "text": "Nudo." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "La amplitud de la marea puede verse afectada por:",
+    "answers": [
+      { "id": "a", "text": "Las variaciones de la presión atmospheric." },
+      { "id": "b", "text": "La temperatura del agua." },
+      { "id": "c", "text": "La composición del fondo marino." },
+      { "id": "d", "text": "La sonda de la carta." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "Para realizar la tablilla de desvios de una aguja náutica, ¿qué acción procede efectuar?",
+    "answers": [
+      { "id": "a", "text": "La compensación." },
+      { "id": "b", "text": "La sensibilización." },
+      { "id": "c", "text": "La estabilización." },
+      { "id": "d", "text": "La desviación." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Navegando al rumbo verdadero $076^{\\circ}$, se tomaron simultáneamente marcaciones del faro de la Isla de Tarifa $=016^{\\circ}$ por babor y del faro de Punta Malabata $=104^{\\circ}$ por estribor. Se pide la situación en ese momento.",
+    "answers": [
+      { "id": "a", "text": "$l=35^{\\circ}-56,2^{\\prime}1$ $L=005^{\\circ}-44,9^{\\prime}$ W." },
+      { "id": "b", "text": "$I=35^{\\circ}-56,8^{\\prime}$ $N~L=005^{\\circ}-44,0^{\\prime}$ W." },
+      { "id": "c", "text": "$I=35^{\\circ}-57,2^{\\prime}$ N $L=005^{\\circ}-45,6^{\\prime}W.$" },
+      { "id": "d", "text": "$I=35^{\\circ}-55,2^{\\prime}N$ $L=005^{\\circ}-44.2^{\\prime}W.$" }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Encontrándose la embarcación en la enfilación de los faros de Punta Europa y Punta Carnero mientras se navega al rumbo verdadero $178^{\\circ}$, se observa el faro de Punta Almina abierto 17° por estribor. Se pide la situación en ese momento.",
+    "answers": [
+      { "id": "a", "text": "$I=36^{\\circ}-06,2^{\\prime}N$ $L=005^{\\circ}-20,2^{\\prime}$ W." },
+      { "id": "b", "text": "$t=36^{\\circ}-10,3^{\\prime}N$ $L=005^{\\circ}-11,4^{\\prime}$ W.." },
+      { "id": "c", "text": "$I=36^{\\circ}-10,2^{\\prime}N$ $L=005^{\\circ}-21.5^{\\prime}W.$" },
+      { "id": "d", "text": "$1=36^{\\circ}-06,8^{\\prime}N$ $L=005^{\\circ}-10.6^{\\prime}W.$" }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Hallándose una embarcación en la enfilación del faro de Punta de Gracia con la luz roja del dique del puerto de Barbate, se toma demora de aguja del faro de Punta de Gracia $=316^{\\circ}$ Calcular el valor de la Corrección Total.",
+    "answers": [
+      { "id": "a", "text": "$4.5^{\\circ}(+).$" },
+      { "id": "b", "text": "$2,5^{\\circ}(t)$" },
+      { "id": "c", "text": "$2,5^{\\circ}(-).$" },
+      { "id": "d", "text": "$4.5^{\\circ}(-).$" }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Encontrándose una embarcación en latitud $=36^{\\circ}-06,6^{\\prime}$ N y longitud $=006^{\\circ}-02,2^{\\prime}$ W se pone proa al faro de Punta Malabata. Calcular el rumbo de aguja si la corrección total es $6,5^{\\circ}(-).$",
+    "answers": [
+      { "id": "a", "text": "$141^{\\circ}$" },
+      { "id": "b", "text": "$134.5^{\\circ}$" },
+      { "id": "c", "text": "$140.5^{\\circ}$" },
+      { "id": "d", "text": "$147,5^{\\circ}.$" }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué son los grifos de fondo?",
+    "answers": [
+      { "id": "a", "text": "Son válvulas colocadas en el interior del casco, bajo la línea de flotación." },
+      { "id": "b", "text": "Son orificios practicados en el casco, generalmente en la obra muerta." },
+      { "id": "c", "text": "Son aparatos destinados a bombear el agua expulsándola a la mar." },
+      { "id": "d", "text": "Son válvulas colocadas en el interior del casco, por encima de la línea de flotación." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Las maniobras de aproximación más habituales cuando se ve al náufrago son:",
+    "answers": [
+      { "id": "a", "text": "Curva de evolución de Petersoon y maniobra de Boutakov." },
+      { "id": "b", "text": "Curva de evolución de Petersoon y maniobra de Korbachov." },
+      { "id": "c", "text": "Curva de evolución de Anderson y maniobra de Boutakov." },
+      { "id": "d", "text": "Curva de evolución de Korbachov y maniobra de Anderson." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Se podrá evitar o reducir el balanceo de una embarcación:",
+    "answers": [
+      { "id": "a", "text": "Cruzándose a la mar." },
+      { "id": "b", "text": "Atravesándose a la mar." },
+      { "id": "c", "text": "Modificando el rumbo." },
+      { "id": "d", "text": "El balanceo es una característica de la estabilidad estática transversal de la embarcación, limitado por su diseño y que no varia con el gobierno de ésta." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Las aguas someras son:",
+    "answers": [
+      { "id": "a", "text": "Aquellas aguas muy profundas que permiten la libre navegación." },
+      { "id": "b", "text": "Aguas poco profundas en las que nuestra embarcación puede correr riesgo de varar." },
+      { "id": "c", "text": "Aguas marítimas donde el tráfico es muy denso y existe el riesgo de abordaje." },
+      { "id": "d", "text": "Aguas marítimas donde el tráfico es poco denso." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "En caso de cambiar de rumbo durante un remolque, la embarcación remolcada, por lo general:",
+    "answers": [
+      { "id": "a", "text": "Mantendrá el tímón a la vía en todo momento para facilitar la travesía." },
+      { "id": "b", "text": "Gobernará al rumbo del remolcador facilitando la travesía." },
+      { "id": "c", "text": "Gobernará con pequeñas variaciones de rumbo hacia la banda contraria del remolcador facilitando la evolución." },
+      { "id": "d", "text": "Gobernará indistintamente, no es posible facilitar la maniobra de remolque con cambios de rumbo." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "¿Puede una embarcación de recreo española en puertos nacionales izar la bandera reconocida en el Estatuto de la Comunidad Autónoma de Madrid junto con el Pabellón Nacional?",
+    "answers": [
+      { "id": "a", "text": "No, sólo podrá izarse la bandera de la Comunidad Autónoma de matriculación de la embarcación." },
+      { "id": "b", "text": "Solo si el propietario tiene residencia en la Comunidad de Madrid." },
+      { "id": "c", "text": "Nunca, la posiblidad de izar banderas autonómicas sólo está reconocida a las Comunidades Autónomas históricas." },
+      { "id": "d", "text": "La norma no dice nada al respecto." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "¿Cuál de los siguientes espacios NO está considerado como ZEPIM?",
+    "answers": [
+      { "id": "a", "text": "La Isla de Alborán." },
+      { "id": "b", "text": "El archipiélago de Cabrera." },
+      { "id": "c", "text": "Las islas Sisargas." },
+      { "id": "d", "text": "Las islas Columbretes." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la regla 25 del RIPA, un buque que navegue a vela, cuando sea también propulsado mecánicamente, deberá exhibir a proa en el lugar más visible:",
+    "answers": [
+      { "id": "a", "text": "Una esfera negra." },
+      { "id": "b", "text": "Una marca bicónica." },
+      { "id": "c", "text": "Una marca cónica con el vértice hacia abajo." },
+      { "id": "d", "text": "Una marca cónica con el vértice hacia arriba." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 3 del RIPA, un buque de vela que utiliza simultáneamente su maquinaria propulsora mientras se dedica a la pesca con curricán se considera:",
+    "answers": [
+      { "id": "a", "text": "Un buque dedicado a la pesca." },
+      { "id": "b", "text": "Un buque de vela." },
+      { "id": "c", "text": "Un buque de propulsión mecánica." },
+      { "id": "d", "text": "Un buque de propulsión mecánica con capacidad de maniobra restringida por razón de su actividad." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través la sirena de niebla de otro buque, deberá:",
+    "answers": [
+      { "id": "a", "text": "Reducir su velocidad a una velocidad de seguridad adaptada a las condiciones y circunstancias de visibilidad reducida del momento y a la densidad del tráfico. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "b", "text": "Reducir su velocidad a una velocidad de seguridad adaptada a las condiciones y circunstancias de visibilidad reducida del momento, a la densidad del tráfico y si dispone de radar, a las características, eficacia y limitaciones de éste. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "c", "text": "Reducir su velocidad hasta la mínima de gobierno. Si fuera necesario, suprimirá su arrancada y en todo caso navegará con extrema precaución hasta que desaparezca el peligro." },
+      { "id": "d", "text": "La pregunta no está bien planteada porque, cuando en condiciones de visibilidad reducida un buque oiga, al parecer a proa de su través, la sirena de niebla de otro buque, considerará siempre que el riesgo de abordaje existe." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "Las fases de la Curva de Evolución son:",
+    "answers": [
+      { "id": "a", "text": "Curva de maniobra, Curva variable y Curva deforme." },
+      { "id": "b", "text": "Fase de arrancada, Fase circular y Fase uniforme." },
+      { "id": "c", "text": "Fase de maniobra, Fase variable y Fase uniforme." },
+      { "id": "d", "text": "Fase de maniobra. Fase variable y Fase final." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "En caso de vía de agua grande es siempre recomendable:",
+    "answers": [
+      { "id": "a", "text": "Activar los extintores." },
+      { "id": "b", "text": "De ser posible, pasar un toldo o plástico bien amarrado por el exterior del casco para taponar la vía de agua en la medida de lo posible." },
+      { "id": "c", "text": "Poner un tapón de madera." },
+      { "id": "d", "text": "Izar la mayor." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Si el viento refresca, significa que:",
+    "answers": [
+      { "id": "a", "text": "Está aumentando su fuerza." },
+      { "id": "b", "text": "Está disminuyendo su temperatura." },
+      { "id": "c", "text": "Está cambiando de dirección." },
+      { "id": "d", "text": "Está rolando." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "Los veriles, son líneas de igual:",
+    "answers": [
+      { "id": "a", "text": "Fondo." },
+      { "id": "b", "text": "Presión." },
+      { "id": "c", "text": "Temperatura." },
+      { "id": "d", "text": "No existen." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "Para realizar la tablilla de desvíos de una aguja náutica, ¿qué acción procede efectuar?",
+    "answers": [
+      { "id": "a", "text": "La compensación." },
+      { "id": "b", "text": "La sensibilización." },
+      { "id": "c", "text": "La estabilización." },
+      { "id": "d", "text": "La desviación." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "La amplitud de la marea puede verse afectada por:",
+    "answers": [
+      { "id": "a", "text": "Las variaciones de la presión atmosférica." },
+      { "id": "b", "text": "La temperatura del agua." },
+      { "id": "c", "text": "La composición del fondo marino." },
+      { "id": "d", "text": "La sonda de la carta." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Encontrándose una embarcación en latitud = 36° - 06,6' N y longitud = 006° - 02,2' W se pone proa al faro de Punta Malabata. Calcular el rumbo de aguja si la corrección total es 6,5° (-).",
+    "answers": [
+      { "id": "a", "text": "141°." },
+      { "id": "b", "text": "134,5°" },
+      { "id": "c", "text": "140,5°" },
+      { "id": "d", "text": "147,5°" }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Navegando al rumbo verdadero 076°, se tomaron simultáneamente marcaciones del faro de la Isla de Tarifa = 0.16° por babor y del faro de Punta Malabata = 104° por estribor. Se pide la situación en ese momento.",
+    "answers": [
+      { "id": "a", "text": "l = 35° - 56,2' N L = 005° - 44,9' W." },
+      { "id": "b", "text": "l = 35° - 56,8' N L = 005° - 44,0' W." },
+      { "id": "c", "text": "I = 35° - 57,2' N L = 005° - 45,6' W" },
+      { "id": "d", "text": "I = 35° - 55,2' N L = 005° - 44,2' W" }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Encontrándose la embarcación en la enfilación de los faros de Punta Europa y Punta Carnero mientras se navega al rumbo verdadero 178° se observa el faro de Punta Almina abierto 17° por estribor. Se pide la situación en ese momento.",
+    "answers": [
+      { "id": "a", "text": "I = 36° - 06,2' N L = 005° - 20,2' W." },
+      { "id": "b", "text": "I = 36° - 10,3' N L = 005° - 11,4' W." },
+      { "id": "c", "text": "I = 36° - 10,2' N L = 005° - 21,5' W" },
+      { "id": "d", "text": "I = 36° - 06,8' N L = 005° - 10,6' W" }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Hallándose una embarcación en la enfilación del faro de Punta de Gracia con la luz roja del dique del puerto de Barbate, se toma demora de aguja del faro de Punta de Gracia = 316°. Calcular el valor de la Corrección Total.",
+    "answers": [
+      { "id": "a", "text": "4,5° (+)." },
+      { "id": "b", "text": "2,5° (+)." },
+      { "id": "c", "text": "2,5° (-)." },
+      { "id": "d", "text": "4,5° (-)." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Cuál es el plano que separa la obra viva de la obra muerta?",
+    "answers": [
+      { "id": "a", "text": "Plano de crujía." },
+      { "id": "b", "text": "Plano de flotación." },
+      { "id": "c", "text": "Plano de carena." },
+      { "id": "d", "text": "Plano de la cuaderna maestra." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "Si, estando de pie, el viento me da de cara:",
+    "answers": [
+      { "id": "a", "text": "Estoy mirando a sotavento." },
+      { "id": "b", "text": "Estoy mirando al Norte." },
+      { "id": "c", "text": "Estoy mirando al barlovento." },
+      { "id": "d", "text": "Estoy mirando al Sur." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué son los guardines?",
+    "answers": [
+      { "id": "a", "text": "Piezas en forma de capuchón que protegen los orificios donde va el eje." },
+      { "id": "b", "text": "Los cables por los que se transmite a la pala del timón el giro de la rueda." },
+      { "id": "c", "text": "Orificios por los que la parte superior de la mecha del timón atraviesa el casco." },
+      { "id": "d", "text": "Cada uno de los extremos libres de un cabo o cable." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué es el asiento?",
+    "answers": [
+      { "id": "a", "text": "Es la diferencia entre el calado de popa y el calado de proa." },
+      { "id": "b", "text": "Es la diferencia entre el calado medio y el calado en el medio." },
+      { "id": "c", "text": "Es la suma del calado de proa más el calado de popa." },
+      { "id": "d", "text": "Es la suma del arrufo más el quebranto." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "¿Qué es una gaza?",
+    "answers": [
+      { "id": "a", "text": "Es el extremo del cabo que queda libre." },
+      { "id": "b", "text": "Es un lazo." },
+      { "id": "c", "text": "Es el nudo que se emplea para unir un cabo a una argolla." },
+      { "id": "d", "text": "Es una vuelta que se realiza para suspender una verga o un gancho." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Cuándo se dice que el barco garrea?",
+    "answers": [
+      { "id": "a", "text": "Cuando el ancla no se queda quieta ni firme en el fondo, provocando un desplazamiento del barco a barlovento." },
+      { "id": "b", "text": "Cuando el barco gira tomando como centro el ancla y como radio la cadena." },
+      { "id": "c", "text": "Cuando el ancla no se queda quieta ni firme en el fondo, provocando un desplazamiento del barco a sotavento." },
+      { "id": "d", "text": "Cuando debido a cambios en la dirección del viento o la corriente queda la proa orientada al factor dominante." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "En general, cuando una persona caiga al agua:",
+    "answers": [
+      { "id": "a", "text": "Meteremos el timón hacia la banda que ha caído." },
+      { "id": "b", "text": "Meteremos el timón hacia la banda contraria a la que ha caído." },
+      { "id": "c", "text": "Meteremos el timón hacia cualquier banda." },
+      { "id": "d", "text": "Meteremos muy poco timón hacia cualquier banda." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Podríamos evitar o reducir el cabeceo de una embarcación:",
+    "answers": [
+      { "id": "a", "text": "Únicamente cambiando de velocidad." },
+      { "id": "b", "text": "Situando todos los tripulantes a una banda." },
+      { "id": "c", "text": "Variando de rumbo." },
+      { "id": "d", "text": "El cabeceo es una característica de la estabilidad estática longitudinal de la embarcación, delimitada por su diseño y que no varía con el gobierno de ésta." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Cómo capeará el temporal una embarcación de propulsión mecánica?",
+    "answers": [
+      { "id": "a", "text": "Amura a la mar a toda máquina, para hacer gobernable la embarcación hasta no sentir los efectos del temporal." },
+      { "id": "b", "text": "Amura a la mar a toda máquina, para hacer gobernable la embarcación hasta llegar a un lugar de refugio." },
+      { "id": "c", "text": "Amura a la mar con poca pero suficiente máquina avante, para hacer gobernable la embarcación." },
+      { "id": "d", "text": "Amura a la mar con nada de máquina, intentando reservar combustible." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Los grifos de fondo:",
+    "answers": [
+      { "id": "a", "text": "Estarán cerrados cuando las manetas estén paralelas a la dirección de la tubería." },
+      { "id": "b", "text": "Estarán cerrados cuando las manetas estén perpendiculares a la dirección de la tubería." },
+      { "id": "c", "text": "Si son de manetas, se evitará su instalación por su alto factor de fallo." },
+      { "id": "d", "text": "Siempre se instalarán los de manetas." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "En las zonas de baño debidamente balizadas:",
+    "answers": [
+      { "id": "a", "text": "El lanzamiento o varada de embarcaciones deberá hacerse a través de canales debidamente señalizados." },
+      { "id": "b", "text": "Si no existe un canal debidamente señalizado, se exige que el lanzamiento o varada se haga sin superar los tres nudos de velocidad." },
+      { "id": "c", "text": "Si no existe un canal debidamente señalizado, sólo se exige que se adopten las precauciones necesarias para evitar riesgos a la seguridad de la vida humana en la mar." },
+      { "id": "d", "text": "Las limitaciones dentro de zona de baño balizada no se aplican a la práctica de actividades subacuáticas." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "La descarga de aguas sucias por embarcaciones de recreo en aguas en las que España ejerza soberanía, derechos soberanos o jurisdicción, en aguas distintas de zonas portuarias, aguas protegidas, rías, bahías o similares, está autorizada:",
+    "answers": [
+      { "id": "a", "text": "Hasta tres millas marinas de la tierra más próxima si las aguas sucias han sido previamente desmenuzadas y desinfectadas." },
+      { "id": "b", "text": "Hasta tres millas se permite con tratamiento, y que además el efluente no produzca sólidos flotantes visibles ni ocasione decoloración en las aguas circundantes." },
+      { "id": "c", "text": "Cuando la embarcación efectúe la descarga de aguas sucias hasta una distancia de doce millas, siempre que se descarguen a un régimen moderado, hallándose la embarcación en ruta navegando a velocidad no menor de 4 nudos." },
+      { "id": "d", "text": "Cuando la embarcación efectúe la descarga de aguas sucias desmenuzada y desinfectada, hasta tres millas, siempre que se descarguen a un régimen moderado, hallándose la embarcación en ruta navegando a velocidad no menor de 4 nudos." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿Cómo podemos indicar la situación de las aguas más profundas?",
+    "answers": [
+      { "id": "a", "text": "Solamente en las cartas de navegación." },
+      { "id": "b", "text": "Mediante una marca lateral modificada." },
+      { "id": "c", "text": "Solamente mediante señales de radio." },
+      { "id": "d", "text": "Mediante una marca cardinal." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿Podemos utilizar una marca de aguas navegables como marca de eje de un canal?",
+    "answers": [
+      { "id": "a", "text": "Sí." },
+      { "id": "b", "text": "No, nunca." },
+      { "id": "c", "text": "Depende de la longitud del canal." },
+      { "id": "d", "text": "Sólo si hay luz diurna." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Cuando una marca de aguas navegables tiene luz. ¿Cómo es su señal luminosa?",
+    "answers": [
+      { "id": "a", "text": "Tiene color blanco y su ritmo es isofase, de ocultaciones, un destello largo cada diez segundos o el correspondiente a la letra Morse \"B\"." },
+      { "id": "b", "text": "Tiene color blanco y su ritmo es isofase, de ocultaciones, un destello largo cada diez segundos o el correspondiente a la letra Morse \"C\"." },
+      { "id": "c", "text": "Tiene color blanco y su ritmo es isofase, de ocultaciones, un destello largo cada diez segundos o el correspondiente a la letra Morse \"D\"." },
+      { "id": "d", "text": "Tiene color blanco y su ritmo es isofase, de ocultaciones, un destello largo cada diez segundos o el correspondiente a la letra Morse \"A\"." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Qué forma tienen las marcas especiales?",
+    "answers": [
+      { "id": "a", "text": "Siempre de espeque." },
+      { "id": "b", "text": "De libre elección, pero que no se preste a confusión con otras marcas de ayudas a la navegación." },
+      { "id": "c", "text": "Siempre esférica." },
+      { "id": "d", "text": "Siempre de castillete." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "En un punto de bifurcación de un canal, la ruta que el servicio de señales marítimas competente considera más apropiada para navegar. ¿Cómo se indica?",
+    "answers": [
+      { "id": "a", "text": "No hay bifurcaciones en un canal." },
+      { "id": "b", "text": "Nunca se indica, las rutas que parten de la bifurcación son igualmente apropiadas para la navegación." },
+      { "id": "c", "text": "Puede utilizarse una marca lateral modificada para indicar el canal principal." },
+      { "id": "d", "text": "Se indica mediante una marca lateral sin modificar." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la regla 23 del RIPA, operando en la condición sin desplazamiento, los aerodeslizadores exhibirán:",
+    "answers": [
+      { "id": "a", "text": "Una luz blanca todo horizonte y una luz de remolque." },
+      { "id": "b", "text": "Sólo luces de costado y de alcance." },
+      { "id": "c", "text": "Una luz amarilla de centelleos todo horizonte, entre otras." },
+      { "id": "d", "text": "Una luz roja centelleante todo horizonte." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales es indicativa de peligro y necesidad de ayuda?",
+    "answers": [
+      { "id": "a", "text": "Una bandera cuadrada que tenga debajo de ella una bola." },
+      { "id": "b", "text": "Una bandera cuadrada que tenga debajo de ella tres bolas." },
+      { "id": "c", "text": "Una bandera cuadrada." },
+      { "id": "d", "text": "Un rombo negro." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 32 del RIPA, una \"pitada larga\" significa:",
+    "answers": [
+      { "id": "a", "text": "Un sonido de una duración aproximada de 2 a 3 segundos." },
+      { "id": "b", "text": "Un sonido de una duración aproximada de 7 segundos." },
+      { "id": "c", "text": "Un sonido de larga duración." },
+      { "id": "d", "text": "Un sonido de una duración aproximada de 4 a 6 segundos." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "De acuerdo con la regla 9 del RIPA, ¿qué buques no deberán cruzar un paso o canal angosto si al hacerlo estorban el tránsito de otro buque que sólo pueda navegar con seguridad dentro de dicho paso o canal?",
+    "answers": [
+      { "id": "a", "text": "En tal caso, ningún buque podrá cruzar dicho paso o canal." },
+      { "id": "b", "text": "Únicamente los buques de vela." },
+      { "id": "c", "text": "Únicamente los buques de eslora inferior a 20 metros y los buques de vela." },
+      { "id": "d", "text": "Únicamente los buques dedicados a la pesca." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la regla 8 del RIPA, en un paso o canal angosto:",
+    "answers": [
+      { "id": "a", "text": "El buque cuyo tránsito no deba ser estorbado por otro buque seguirá estando plenamente obligado a cumplir con las reglas de rumbo y gobierno, cuando ambos buques se aproximen con riesgo de que se produzca un abordaje." },
+      { "id": "b", "text": "El buque cuyo tránsito no deba ser estorbado por otro buque se comportará en todo caso como el buque que \"sigue a rumbo\" según la regla 17 del RIPA." },
+      { "id": "c", "text": "El buque obligado a no estorbar el tránsito de otro buque que sólo pueda navegar con seguridad dentro de dicho paso o canal podrá cruzar dicho paso o canal, pero en tal caso se comportará, respecto del otro, como el buque que \"cede el paso\" según la regla 16 del RIPA." },
+      { "id": "d", "text": "El buque cuyo tránsito no deba ser estorbado por otro buque será considerado como un buque con su capacidad de maniobra restringida." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 34 del RIPA, un buque de propulsión mecánica en navegación que esté a la vista de otro, podrá complementar las pitadas reglamentarias, para caer a babor, mediante la siguiente señal luminosa:",
+    "answers": [
+      { "id": "a", "text": "Un destello." },
+      { "id": "b", "text": "Tres destellos." },
+      { "id": "c", "text": "Dos destellos." },
+      { "id": "d", "text": "Un destello a intervalos regulares." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 3 del RIPA, un buque navegando a vela que, simultáneamente, utilice su maquinaria propulsora se considera:",
+    "answers": [
+      { "id": "a", "text": "Un buque de vela." },
+      { "id": "b", "text": "Un buque de propulsión mecánica." },
+      { "id": "c", "text": "En todo caso, un buque de propulsión mecánica con su capacidad de maniobra restringida." },
+      { "id": "d", "text": "Un buque de vela si lleva desplegado el foque y, en cualquier otro caso, un buque de propulsión mecánica." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la regla 3 del RIPA, un buque fondeado:",
+    "answers": [
+      { "id": "a", "text": "Es un buque con capacidad de maniobra restringida." },
+      { "id": "b", "text": "No es un buque en navegación." },
+      { "id": "c", "text": "Es un buque en navegación." },
+      { "id": "d", "text": "Carece de toda relevancia." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Qué significa la señal \"NC\" del Código Internacional de Señales?",
+    "answers": [
+      { "id": "a", "text": "No significa nada." },
+      { "id": "b", "text": "Una señal indicativa de peligro y necesidad de ayuda." },
+      { "id": "c", "text": "Hay médico a bordo." },
+      { "id": "d", "text": "Caigo a estribor." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "De acuerdo con la regla 19 del RIPA, si en condiciones de visibilidad reducida, un buque detecta únicamente por medio del radar la presencia de otro buque, situado por el través de estribor y determina que se está creando una situación de aproximación excesiva:",
+    "answers": [
+      { "id": "a", "text": "Reducirá en todo caso su velocidad hasta la mínima de gobierno y, de ser necesario, suprimirá su arrancada." },
+      { "id": "b", "text": "Suprimirá en todo caso su arrancada." },
+      { "id": "c", "text": "Maniobrará con la suficiente antelación, teniendo en cuenta que, si la maniobra consiste en un cambio de rumbo, en la medida de lo posible se evitará un cambio de rumbo a babor." },
+      { "id": "d", "text": "Maniobrará con la suficiente antelación, teniendo en cuenta que, si la maniobra consiste en un cambio de rumbo, se evitará en lo posible un cambio de rumbo a estribor." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "El cabo que se da de proa hacia popa o viceversa se llama:",
+    "answers": [
+      { "id": "a", "text": "Largo." },
+      { "id": "b", "text": "Esprín." },
+      { "id": "c", "text": "Codera." },
+      { "id": "d", "text": "Través." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "En toda curva de evolución hay tres fases, que son:",
+    "answers": [
+      { "id": "a", "text": "De maniobra, variable y uniforme." },
+      { "id": "b", "text": "Inicial, intermedia y final." },
+      { "id": "c", "text": "Inicial, de maniobra y final." },
+      { "id": "d", "text": "De maniobra, intermedia y uniforme." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "¿Cuál de los siguientes puntos NO se considera de mayor riesgo para producirse una vía de agua?",
+    "answers": [
+      { "id": "a", "text": "La limera del timón." },
+      { "id": "b", "text": "Los grifos del WC." },
+      { "id": "c", "text": "Los grifos de fondo." },
+      { "id": "d", "text": "La cabina." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "Tras varar una embarcación en las rocas, una de las primeras comprobaciones a llevar a cabo será:",
+    "answers": [
+      { "id": "a", "text": "Distribuir los pesos a bordo, compensando en la medida de lo posible la escora." },
+      { "id": "b", "text": "Verificar el correcto gobierno de la pala del timón." },
+      { "id": "c", "text": "Determinar el estado de la quilla." },
+      { "id": "d", "text": "Asegurarse que no se han producido vías de agua." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "¿Qué es un \"espiche\"?",
+    "answers": [
+      { "id": "a", "text": "Un agujero más pequeño que un imbornal." },
+      { "id": "b", "text": "Una turafalla de madera." },
+      { "id": "c", "text": "Un tapón de madera para tapar vías de agua." },
+      { "id": "d", "text": "Un disco de fieltro o goma atravesado por un eje roscado con un brazo transversal." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Los anticiclones son:",
+    "answers": [
+      { "id": "a", "text": "Regiones en las que hay un conjunto de isobaras cerradas y en las que la presión atmosférica crece hacia el centro." },
+      { "id": "b", "text": "Regiones en las que hay un conjunto de isobaras cerradas en las que la presión atmosférica decrece hacia el centro." },
+      { "id": "c", "text": "Regiones en las que hay un conjunto de isobaras abiertas o cerradas en las que la presión atmosférica crece siempre en la misma dirección." },
+      { "id": "d", "text": "Un conjunto de isobaras abiertas o cerradas en las que la presión atmosférica decrece siempre en la misma dirección." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "La presión atmosférica se puede expresar, al menos, en las siguientes unidades:",
+    "answers": [
+      { "id": "a", "text": "Milímetros de columna de agua y grados." },
+      { "id": "b", "text": "Milímetros de mercurio y Pascales." },
+      { "id": "c", "text": "Hectopascales y dinas." },
+      { "id": "d", "text": "Pascales y nudos." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Viento aparente es:",
+    "answers": [
+      { "id": "a", "text": "La resultante vectorial del viento real y el viento generado por el avance de la embarcación." },
+      { "id": "b", "text": "El viento que habría si el mar estuviera en calma." },
+      { "id": "c", "text": "El viento existente al estar parada la embarcación." },
+      { "id": "d", "text": "La suma algebraica del viento real y el relativo." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "¿Cuál de las siguientes afirmaciones NO es correcta?",
+    "answers": [
+      { "id": "a", "text": "El terral se debe al viento que sopla del desierto de forma constante y permanente, alcanzando tal fuerza que hace que el aire se mueva del mar a la tierra." },
+      { "id": "b", "text": "El terral y el virazón están provocados por el calentamiento desigual del mar y de la tierra." },
+      { "id": "c", "text": "El terral is un régimen de brisas, que va de la tierra al mar." },
+      { "id": "d", "text": "El virazón es un régimen de brisas, que va de la mar a tierra." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "El Ecuador es un círculo máximo:",
+    "answers": [
+      { "id": "a", "text": "Perpendicular al eje de la Tierra." },
+      { "id": "b", "text": "Que contiene al eje de la Tierra." },
+      { "id": "c", "text": "Paralelo al eje de la Tierra." },
+      { "id": "d", "text": "Que divide a la Tierra en ocho hemisferios." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "¿Cuál de las siguientes fórmulas es FALSA?",
+    "answers": [
+      { "id": "a", "text": "Rv = Ra + dm + Desvío." },
+      { "id": "b", "text": "Rv = Ra + Rm + Desvío." },
+      { "id": "c", "text": "Rv = Rm + Desvío" },
+      { "id": "d", "text": "Rv = Ra + CT" }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Las líneas de posición se representan:",
+    "answers": [
+      { "id": "a", "text": "Siempre rectas." },
+      { "id": "b", "text": "Rectas si son distancias." },
+      { "id": "c", "text": "Circulares si son adiabáticas." },
+      { "id": "d", "text": "Circulares si son distancias." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Son ayudas a la navegación diurna que carecen de luz:",
+    "answers": [
+      { "id": "a", "text": "Las marcas o puntos destacados de tierra." },
+      { "id": "b", "text": "Las boyas." },
+      { "id": "c", "text": "Los faros." },
+      { "id": "d", "text": "Las farolas." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "¿Cuál de las siguientes afirmaciones sobre el desvío de la aguja es cierta?",
+    "answers": [
+      { "id": "a", "text": "Varía con el rumbo de la embarcación." },
+      { "id": "b", "text": "Es igual para todas las agujas náuticas de una embarcación." },
+      { "id": "c", "text": "No depende de su emplazamiento en la embarcación." },
+      { "id": "d", "text": "Depende de la situación geográfica cuando la embarcación navega." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "A las 09:00 se toman simultáneamente demoras de aguja del faro de Punta Carnero = 038° y del faro de Isla de Tarifa = 298°, siendo la corrección total 7° (-). Se pide la situación verdadera a las 09:00 por intersección de las anteriores líneas de posición.",
+    "answers": [
+      { "id": "a", "text": "l = 35° - 58,8' N L = 005° - 29,8' W." },
+      { "id": "b", "text": "l = 35° - 57,4' N L = 005° - 31,2' W." },
+      { "id": "c", "text": "l = 35° - 58,2' N L = 005° - 30,3' W." },
+      { "id": "d", "text": "l = 35° - 57,2' N L = 005° - 30,0' W." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Calcular el valor de la corrección total (Ct) a partir de una declinación magnética de 10° NW y un desvío de 4° (+).",
+    "answers": [
+      { "id": "a", "text": "4° (+)" },
+      { "id": "b", "text": "6° (-)" },
+      { "id": "c", "text": "6° (+)." },
+      { "id": "d", "text": "4° (-)." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "¿Cuál es la distancia (d) y el rumbo verdadero (Rv) desde el faro de Punta de Cires al faro de Punta Carnero?",
+    "answers": [
+      { "id": "a", "text": "d = 10,5 millas y Rv = 015°" },
+      { "id": "b", "text": "d = 11,0 millas y Rv = 017°" },
+      { "id": "c", "text": "d = 11,0 millas y Rv = 195°" },
+      { "id": "d", "text": "d = 10,5 millas y Rv = 197°" }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Una embarcación se encuentra en l = 36° - 04,0' N y L = 006° - 05,0' W, navegando al norte verdadero a 12 nudos. Calcular la situación tras 30 minutos navegando a ese rumbo y velocidad.",
+    "answers": [
+      { "id": "a", "text": "l = 36° - 10,0' N L = 006° - 05,0' W." },
+      { "id": "b", "text": "l = 36° - 10,0' N L = 005° - 05,0' W." },
+      { "id": "c", "text": "l = 36° - 16,0' N L = 006° - 05,0' W." },
+      { "id": "d", "text": "l = 36° - 16,0' N L = 005° - 05,0' W." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Cuál es el plano que separa la obra viva de la obra muerta?",
+    "answers": [
+      { "id": "a", "text": "Plano de crujia." },
+      { "id": "b", "text": "Plano de flotación." },
+      { "id": "c", "text": "Plano de carena." },
+      { "id": "d", "text": "Plano de la cuaderna maestra." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "Si, estando de pie, el viento me da de cara;",
+    "answers": [
+      { "id": "a", "text": "Estoy mirando a sotavento." },
+      { "id": "b", "text": "Estoy mirando al Norte." },
+      { "id": "c", "text": "Estoy mirando a barlovento." },
+      { "id": "d", "text": "Estoy mirando al Sur." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué son los guardines?",
+    "answers": [
+      { "id": "a", "text": "Piezas en forma de capuchón que protegen los orificos donde va el eje." },
+      { "id": "b", "text": "Los cables por los que se transmite a la pala del tímón el giro de la rueda." },
+      { "id": "c", "text": "Orificios por los que la parte superior de la mecha del timón atraviesa el casco." },
+      { "id": "d", "text": "Cada uno de los extremos libres de un cabo o cable." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Podríamos evitar o reducir el cabeceo de una embarcación:",
+    "answers": [
+      { "id": "a", "text": "Unicamente cambiando de velocidad." },
+      { "id": "b", "text": "Situando todos los tripulantes a una banda." },
+      { "id": "c", "text": "Variando de rumbo." },
+      { "id": "d", "text": "El cabeceo es una característica de la estabilidad estática longitudinal de la embarcación, delimitada por su diseño y que no varía con el gobierno de ésta." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "La descarga de aguas sucias por embarcaciones de recreo en aguas en las que España ejerza soberanía, derechos soberanos o jurisdicción, en aguas distintas de zonas portuarias, aguas protegidas, rías, bahías o similares, está autorizada:",
+    "answers": [
+      { "id": "a", "text": "Hasta tres millas marinas de la tierra más próxima si las aguas sucias han sido previamente desmenuzadas y desinfectadas." },
+      { "id": "b", "text": "Hasta tres millas se permite con tratamiento, y que además el efluente no produzca sólidos flotantes visibles ni ocasione decoloración en las aguas circundantes." },
+      { "id": "c", "text": "Cuando la embarcación efectúe la descarga de aguas sucias hasta una distancia de doce millas, siempre que se descarguen a un régimen moderado, hallándose la embarcación en ruta navegando a velocidad no menor de 4 nudos." },
+      { "id": "d", "text": "Cuando la embarcación efectúe la descarga de aguas sucias desmenuzada y desinfestada, hasta tres millas, siempre que se descarguen a un régimen moderado, hallándose la embarcación en ruta navegando a velocidad no menor de 4 nudos." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "En un punto de bifurcación de un canal, la ruta que el servicio de señales maritimas competente considera más apropiada para navegar. ¿Cómo se indica?",
+    "answers": [
+      { "id": "a", "text": "No hay bifurcaciones en un canal." },
+      { "id": "b", "text": "Nunca se indica, las rutas que parten de la bifurcación son igualmente apropiadas para la navegación." },
+      { "id": "c", "text": "Puede utilizarse una marca lateral modificada para indicar el canal principal." },
+      { "id": "d", "text": "Se indica mediante una marca lateral sin modificar." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Peodemos utilizar una marca de aguas navegables como marca de eje de un canal?",
+    "answers": [
+      { "id": "a", "text": "Si." },
+      { "id": "b", "text": "No, nunca." },
+      { "id": "c", "text": "Depende de la longitud del canal." },
+      { "id": "d", "text": "Sólo si hay luz diurna." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "De acuerdo con la regla 19 del RIPA, si en condiciones de visibilidad reducida, un buque detecta únicamente por medio del radar la presencia de otro buque, situado por el través de estribor y determina que se está creando una situación de aproximación excesiva:",
+    "answers": [
+      { "id": "a", "text": "Reducirá en todo caso su velocidad hasta la minima de gobierno y, de ser necesario, suprimirá su arrancada." },
+      { "id": "b", "text": "Suprimirá en todo caso su arrancada." },
+      { "id": "c", "text": "Maniobrará con la suficiente antelación, teniendo en cuenta que, si la maniobra consiste en un cambio de rumbo, en la medida de lo posible se evitará un cambio de rumbo a babor." },
+      { "id": "d", "text": "Maniobrará con la suficiente antelación, teniendo en cuenta que, si la maniobra consiste en un cambio de rumbo, se evitará en lo posible un cambio de rumbo a estribor." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Qué significa la señal \"NC\" del Código Internacional de Señales?",
+    "answers": [
+      { "id": "a", "text": "No significa nada." },
+      { "id": "b", "text": "Una señal indicativa de peligro y necesidad de ayuda." },
+      { "id": "c", "text": "Hay medico a bordo." },
+      { "id": "d", "text": "Caigo a estribor." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "maniobra_navegacion",
+    "topicName": "Maniobra y navegación",
+    "statement": "El cabo que se da de proa hacia popa o viceversa se llama:",
+    "answers": [
+      { "id": "a", "text": "Largo." },
+      { "id": "b", "text": "Esprin." },
+      { "id": "c", "text": "Codera." },
+      { "id": "d", "text": "Través." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "¿Qué es un \"espiche\"?",
+    "answers": [
+      { "id": "a", "text": "Un agujero más pequeño que un imbornal." },
+      { "id": "b", "text": "Una turafalla de madera." },
+      { "id": "c", "text": "Un tapón de madera para tapar vias de agua." },
+      { "id": "d", "text": "Un disco de fieltro o goma atravesado por un eje roscado con un brazo trasversal." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
+    "statement": "¿Cual de los siguientes puntos NO se considera de mayor riesgo para producirse una vía de agua?",
+    "answers": [
+      { "id": "a", "text": "La limera del timón." },
+      { "id": "b", "text": "Los grifos del WC." },
+      { "id": "c", "text": "Los grifos de fondo." },
+      { "id": "d", "text": "La cabina." }
+    ],
+    "correctAnswerId": "d",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "Los anticiclones son:",
+    "answers": [
+      { "id": "a", "text": "Regiones en las que hay un conjunto de isobaras cerradas y en las que la presión atmosférica crece hacia el centro." },
+      { "id": "b", "text": "Regiones en las que hay un conjunto de isobaras cerradas en las que la presión atmosférica decrece hacía el centro." },
+      { "id": "c", "text": "Regiones en las que hay un conjunto de isobaras abiertas o cerradas en las que la presión atmosférica crece siempre en la misma dirección." },
+      { "id": "d", "text": "Un conjunto de isobaras abiertas o cerradas en las que la presión atomosférica decrece siempre en la misma dirección." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "La presión atmosférica se puede expresar, al menos, en las siguientes unidades:",
+    "answers": [
+      { "id": "a", "text": "Milimetros de columna de agua y grados." },
+      { "id": "b", "text": "Milímetros de mercurio y Pascales." },
+      { "id": "c", "text": "Hectopascales y dinas." },
+      { "id": "d", "text": "Pascales y nudos." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
+    "statement": "¿Cuál de las siguientes afirmaciones NO es correcta?",
+    "answers": [
+      { "id": "a", "text": "El terral se debe al viento que sopla del desierto de forma constante y permanente, alcanzando tal fuerza que hace que el aire se mueva del mar a la tierra." },
+      { "id": "b", "text": "El terral y el virazón están provocados por el calentamiento desigual del mar y de la tierra." },
+      { "id": "c", "text": "El terral es un régimen de brisas. que va de la tierra al mar." },
+      { "id": "d", "text": "El virazón es un régimen de brisas, que va de la mar a tierra." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
+    "statement": "¿Cuál de las siguientes fórmulas es FALSA?",
+    "answers": [
+      { "id": "a", "text": "Rv Ra + dm + Desvío." },
+      { "id": "b", "text": "Rv Ra + Rm + Desvío." },
+      { "id": "c", "text": "Rv=Rm+Desvio." },
+      { "id": "d", "text": "Rv=Ra+CT" }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "¿Cuál de las siguientes afirmaciones sobre el desvio de la aguja es cierta?",
+    "answers": [
+      { "id": "a", "text": "Varia con el rumbo de la embarcación." },
+      { "id": "b", "text": "Es igual para todas las agujas náuticas de una embarcación." },
+      { "id": "c", "text": "No depende de su emplazamiento en la embarcación." },
+      { "id": "d", "text": "Depende de la situación geográfica cuando la embarcación navega." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Calcular el valor de la corrección total (Ct) a partir de una declinación magnética de 10° NW y un desvío de 4° (+)",
+    "answers": [
+      { "id": "a", "text": "4° (+)." },
+      { "id": "b", "text": "6° (-)" },
+      { "id": "c", "text": "6° (+)." },
+      { "id": "d", "text": "4° (-)." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "¿Cuál es la distancia (d) y el rumbo verdadero (Rv) desde el faro de Punta de Cires al faro de Punta Carnero?",
+    "answers": [
+      { "id": "a", "text": "d=10.5 millas y Rv=015°" },
+      { "id": "b", "text": "d=11,0 millas y Rv=017°." },
+      { "id": "c", "text": "d=11,0 millas y Rv=195°." },
+      { "id": "d", "text": "d=10,5 millas y Rv=197°." }
+    ],
+    "correctAnswerId": "b",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "A las 09:00 se toman simultáneamente demoras de aguja del faro de Punta Carnero = 038° y del faro de Isla de Tarifa = 298°, siendo la corrección total 7° (-). Se pide la situación verdadera a las 09:00 por intersección de las anteriores líneas de posición.",
+    "answers": [
+      { "id": "a", "text": "l=35°-58,8' N L=005°-29,8' W." },
+      { "id": "b", "text": "l=35°-57,4' N L=005°-31,2' W." },
+      { "id": "c", "text": "l=35°-58,2' N L=005°-30,3' W" },
+      { "id": "d", "text": "l=35°-57,2' N L=005°-30,0' W." }
+    ],
+    "correctAnswerId": "c",
+    "createdAt": ""
+  },
+  {
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
+    "statement": "Una embarcación se encuentra en l=36°-04,0' N y L=006°-05,0' W navegando al norte verdadero a 12 nudos. Calcular la situación tras 30 minutos navegando a ese rumbo y velocidad.",
+    "answers": [
+      { "id": "a", "text": "l=36°-10,0' N L=006°-05,0' W." },
+      { "id": "b", "text": "l=36°-10,0° N L=005°-05,0' W." },
+      { "id": "c", "text": "l=36°-16,0' N L=006°-05,0' W." },
+      { "id": "d", "text": "l=36°-16,0' N L=005°-05,0' W." }
+    ],
+    "correctAnswerId": "a",
+    "createdAt": ""
+  }
+]

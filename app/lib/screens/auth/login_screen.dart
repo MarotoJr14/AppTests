@@ -42,6 +42,8 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     } on FirebaseAuthException catch (e) {
       setState(() => _error = _mapAuthError(e.code));
+    } on AuthException catch (e) {
+      setState(() => _error = e.message);
     } catch (e) {
       setState(() => _error = 'Error inesperado. Inténtalo de nuevo.');
     } finally {

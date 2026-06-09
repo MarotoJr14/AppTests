@@ -1,0 +1,990 @@
+[
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Cuál de las siguientes afirmaciones es VERDADERA si nos referimos a una hélice levógira?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "El número de palas que tiene unidas al núcleo siempre es impar."
+      },
+      {
+        "id": "b",
+        "text": "En sentido marcha atrás, y vista desde popa, la hélice gira en el sentido contrario a las agujas del reloj."
+      },
+      {
+        "id": "c",
+        "text": "En sentido marcha avante, y vista desde popa, la hélice gira en el sentido contrario a las agujas del reloj."
+      },
+      {
+        "id": "d",
+        "text": "El capacete es plano para evitar cavitaciones en las palas."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Cuál de las siguientes afirmaciones es FALSA?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Un mamparo puede estar dispuesto en sentido longitudinal."
+      },
+      {
+        "id": "b",
+        "text": "Una cuaderna puede estar dispuesta en sentido transversal."
+      },
+      {
+        "id": "c",
+        "text": "Un mamparo puede estar dispuesto en sentido transversal."
+      },
+      {
+        "id": "d",
+        "text": "Una cuaderna puede estar dispuesta en sentido longitudinal."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "La parte curvada del costado que hay entre el través y la popa se llama:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Amura."
+      },
+      {
+        "id": "b",
+        "text": "Aleta."
+      },
+      {
+        "id": "c",
+        "text": "Codaste."
+      },
+      {
+        "id": "d",
+        "text": "Roda."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "¿Qué es la bocina?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "El orificio por donde el eje de la hélice atraviesa el casco."
+      },
+      {
+        "id": "b",
+        "text": "La pieza en forma de capuchón que protege el orificio donde va el eje de la hélice."
+      },
+      {
+        "id": "c",
+        "text": "El punto de apoyo del eje del timón en el codaste."
+      },
+      {
+        "id": "d",
+        "text": "La barra donde se monta la hélice y que la hace girar."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "Adrizar es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Enderezar, poner derecho algún objeto o la embarcación."
+      },
+      {
+        "id": "b",
+        "text": "Inclinación de la embarcación en el sentido babor-estribor."
+      },
+      {
+        "id": "c",
+        "text": "Permitir que una amarra se vaya al aflojarla."
+      },
+      {
+        "id": "d",
+        "text": "Acción de girar una embarcación en torno al ancla."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "El desplazamiento máximo de una embarcación es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "La velocidad máxima en nudos por unidad de tiempo a la que puede desplazarse la embarcación."
+      },
+      {
+        "id": "b",
+        "text": "La máxima dimensión sumergida del casco medida verticalmente sin contar los apéndices."
+      },
+      {
+        "id": "c",
+        "text": "El peso máximo del volumen de agua de mar desplazada por el casco."
+      },
+      {
+        "id": "d",
+        "text": "El volumen máximo de agua que la embarcación desplaza durante su movimiento."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "El eje del timón que atraviesa el casco se conoce como:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Caña."
+      },
+      {
+        "id": "b",
+        "text": "Mecha."
+      },
+      {
+        "id": "c",
+        "text": "Limera."
+      },
+      {
+        "id": "d",
+        "text": "Pala."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
+    "statement": "Si nuestra embarcación se encuentra inicialmente en una situación de asiento nulo, ¿cuál de las siguientes afirmaciones sería correcta?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Si aumenta únicamente el calado de proa, el asiento del buque pasaría a ser aproante."
+      },
+      {
+        "id": "b",
+        "text": "Deberíamos aumentar obligatoriamente el calado de popa ya que el asiento nulo en una embarcación denota falta de francobordo y por lo tanto una situación de peligro."
+      },
+      {
+        "id": "c",
+        "text": "Si aumenta únicamente el calado de proa, el asiento del buque pasaría a ser apopante."
+      },
+      {
+        "id": "d",
+        "text": "Deberíamos aumentar obligatoriamente en la misma medida tanto el calado de proa como el de popa, hasta que el asiento del buque pase a ser apopante. Esto mejorará las condiciones de seguridad de la embarcación."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "El nudo que utilizamos para unir dos cabos de la misma mena y material se denomina:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "As de guía."
+      },
+      {
+        "id": "b",
+        "text": "Ballestrinque."
+      },
+      {
+        "id": "c",
+        "text": "Margarita."
+      },
+      {
+        "id": "d",
+        "text": "Llano."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "¿Cuál de las siguientes afirmaciones relativas al fondeo es FALSA?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Un barco fondeado bornea cuando da vueltas alrededor del ancla por acción del viento o la corriente."
+      },
+      {
+        "id": "b",
+        "text": "Los tenederos de mejor agarre son los de piedra y roca."
+      },
+      {
+        "id": "c",
+        "text": "El orinque es un cabo fino amarrado por un extremo a la cruz del ancla y por el otro a un boyarín para balizar el ancla."
+      },
+      {
+        "id": "d",
+        "text": "Durante el fondeo se tomará varias marcaciones o enfilaciones a puntos de tierra para situar el barco y se comprobará la sonda bajo la quilla."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "El radio del círculo de borneo es igual a:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "La longitud de cadena filada."
+      },
+      {
+        "id": "b",
+        "text": "La longitud de cadena y eslora de la embarcación."
+      },
+      {
+        "id": "c",
+        "text": "La eslora de la embarcación."
+      },
+      {
+        "id": "d",
+        "text": "Dos veces la longitud del fondeo."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
+    "statement": "Para unir dos cabos de la misma mena utilizaremos el nudo:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Ballestrinque."
+      },
+      {
+        "id": "b",
+        "text": "Vuelta de rezón."
+      },
+      {
+        "id": "c",
+        "text": "Llano."
+      },
+      {
+        "id": "d",
+        "text": "As de guía."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "En caso de MOB (Man Over Board), con el náufrago a la vista, ¿a qué método se recurre?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Maniobra de cuadro expansivo."
+      },
+      {
+        "id": "b",
+        "text": "Maniobra de Riling."
+      },
+      {
+        "id": "c",
+        "text": "Maniobra de Boutakow."
+      },
+      {
+        "id": "d",
+        "text": "Método de búsqueda por sectores."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "El número de extintores obligatorio a bordo dependerá de:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "La eslora del barco y la potencia propulsora."
+      },
+      {
+        "id": "b",
+        "text": "La potencia propulsora y el francobordo del barco."
+      },
+      {
+        "id": "c",
+        "text": "La eslora y el material del casco."
+      },
+      {
+        "id": "d",
+        "text": "La eslora del barco y el máximo número de personas autorizadas a bordo."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Qué dos maniobras de búsqueda pueden ser utilizadas cuando el náufrago no está a la vista?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Exploración en espiral cuadrada y exploración por sectores."
+      },
+      {
+        "id": "b",
+        "text": "Exploración en espiral cuadrada y exploración por círculos concéntricos."
+      },
+      {
+        "id": "c",
+        "text": "Exploración por círculos concéntricos y exploración lineal."
+      },
+      {
+        "id": "d",
+        "text": "Exploración por sectores y exploración elíptica."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "Entre dos barcos, se dice que un barco está a barlovento si:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Está situado a babor, independientemente de la dirección del viento."
+      },
+      {
+        "id": "b",
+        "text": "Está más alejado de la región por la que viene el viento."
+      },
+      {
+        "id": "c",
+        "text": "Está situado a estribor, independientemente de la dirección del viento."
+      },
+      {
+        "id": "d",
+        "text": "Está más cerca de la región por la que viene el viento."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Cómo se denomina al elemento de accionamiento automático de liberación de la balsa salvavidas en caso de hundimiento?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Gancho disparador."
+      },
+      {
+        "id": "b",
+        "text": "Boza de amarre y activación."
+      },
+      {
+        "id": "c",
+        "text": "Gaza de liberación."
+      },
+      {
+        "id": "d",
+        "text": "Zafa hidrostática."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "En caso de emergencia, podemos contactar con Salvamento Marítimo a través de:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "El canal 70 de VHF, solo para casos de urgencia."
+      },
+      {
+        "id": "b",
+        "text": "Por radiotelefonía (voz) en el canal 70 de VHF."
+      },
+      {
+        "id": "c",
+        "text": "Mediante el canal de socorro de llamada selectiva digital de VHF (canal 16)."
+      },
+      {
+        "id": "d",
+        "text": "Por radiotelefonía en el canal 16 de VHF."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Cuál de las siguientes maniobras de búsqueda se emplea cuando el náufrago no está a la vista?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Método Boutakov."
+      },
+      {
+        "id": "b",
+        "text": "Curva de Williamson."
+      },
+      {
+        "id": "c",
+        "text": "Exploración en espiral cuadrada."
+      },
+      {
+        "id": "d",
+        "text": "Maniobra de Anderson."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "seguridad_mar",
+    "topicName": "Seguridad",
+    "statement": "¿Cuál de las siguientes acciones NO se debe adoptar navegando en aguas someras?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Se tendrá preparada la maniobra de fondeo."
+      },
+      {
+        "id": "b",
+        "text": "Siempre que sea posible, se localizará un veril de seguridad que no podamos superar."
+      },
+      {
+        "id": "c",
+        "text": "Aumentar la velocidad evitando así posibles encallamientos, aprovechando el empuje de la embarcación."
+      },
+      {
+        "id": "d",
+        "text": "Se procederá a la activación del profundímetro o la sonda."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "De conformidad con la Regla 2, del Convenio MARPOL, Anexo V, las disposiciones del mismo se aplican:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Sólo a las embarcaciones de recreo, entendiendo por tal toda embarcación cuyo casco tenga una eslora entre 2,5 y 24 metros y utilizada para fines deportivos."
+      },
+      {
+        "id": "b",
+        "text": "A menos que se disponga expresamente otra cosa, se aplicarán a todos los buques."
+      },
+      {
+        "id": "c",
+        "text": "Únicamente a los buques construidos después del 1 de julio de 1986."
+      },
+      {
+        "id": "d",
+        "text": "Sólo a embarcaciones y buques de recreo con eslora inferior a 24 metros y hasta 12 pasajeros."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "Las embarcaciones deportivas o de recreo autorizadas para un máximo de doce pasajeros realizarán la notificación reducida de desechos con la siguiente periodicidad:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Trimestralmente."
+      },
+      {
+        "id": "b",
+        "text": "Semestralmente."
+      },
+      {
+        "id": "c",
+        "text": "Anualmente."
+      },
+      {
+        "id": "d",
+        "text": "Cada vez que entren en puerto."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "Señale cuál de las siguientes afirmaciones NO es correcta:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "No tener izado, o exhibir incorrectamente el pabellón nacional podrá ser sancionado como infracción administrativa de carácter grave contra la ordenación del tráfico marítimo."
+      },
+      {
+        "id": "b",
+        "text": "El pabellón nacional deberá izarse, igualmente, cuando así lo requiera la costumbre internacional o las disposiciones aplicables en espacios marítimos sometidos a jurisdicción extranjera."
+      },
+      {
+        "id": "c",
+        "text": "Los buques están obligados a izar el pabellón nacional a la vista de un buque de guerra o fortaleza, a las entradas y salidas de los puertos, y en estos, de sol a sol, en los días festivos."
+      },
+      {
+        "id": "d",
+        "text": "Se reserva el asta de proa y el pico del palo mayor para la Bandera de España."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "legislacion",
+    "topicName": "Legislación",
+    "statement": "De conformidad con la Regla 33.1, Capítulo V, del Convenio Internacional SOLAS, el capitán de un buque que, estando en el mar, reciba una señal que le indique que hay personas en peligro en el mar:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Estará obligado siempre a acudir a toda máquina en su auxilio, informando de ello, si es posible, a dicha personas o al servicio de búsqueda y salvamento."
+      },
+      {
+        "id": "b",
+        "text": "Solo está obligado a informar al servicio de búsqueda y salvamento pertinente, y lo anotará en el diario de navegación."
+      },
+      {
+        "id": "c",
+        "text": "Está obligado, a acudir a toda máquina en su auxilio, cuando estando en condiciones de prestar ayuda, reciba una señal, de la fuente que sea, que le indique que hay personas en peligro en el mar, salvo, que no pueda prestar el auxilio, o si dadas las circunstancias especiales del caso el capitán estima que es irrazonable o innecesario hacerlo."
+      },
+      {
+        "id": "d",
+        "text": "La obligación de prestar ayuda depende de la nacionalidad y la condición jurídica de dichas personas y de las circunstancias en que hayan sido encontradas."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "El color de las marcas para indicar vertederos es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Amarillo sobre negro."
+      },
+      {
+        "id": "b",
+        "text": "Amarillo."
+      },
+      {
+        "id": "c",
+        "text": "Negro sobre amarillo."
+      },
+      {
+        "id": "d",
+        "text": "Negro con una ancha banda horizontal amarilla."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Una luz blanca isofase indicará:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Una marca cardinal este."
+      },
+      {
+        "id": "b",
+        "text": "Una marca especial."
+      },
+      {
+        "id": "c",
+        "text": "Una marca de peligro aislado."
+      },
+      {
+        "id": "d",
+        "text": "Una marca de aguas navegables."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "La característica diurna más importante de toda marca de peligro aislado es la marca de tope, que está formada por:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Dos esferas negras superpuestas."
+      },
+      {
+        "id": "b",
+        "text": "Una esfera negra."
+      },
+      {
+        "id": "c",
+        "text": "Una esfera roja."
+      },
+      {
+        "id": "d",
+        "text": "Dos esferas rojas superpuestas."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Para indicar el canal principal, en el punto de bifurcación de un canal:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Puede utilizarse una marca lateral sin modificar."
+      },
+      {
+        "id": "b",
+        "text": "No puede utilizarse una marca lateral modificada."
+      },
+      {
+        "id": "c",
+        "text": "No existe ninguna marca que lo indique."
+      },
+      {
+        "id": "d",
+        "text": "Puede utilizarse una marca lateral modificada."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "¿De qué color es la luz de una marca especial?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Rojo."
+      },
+      {
+        "id": "b",
+        "text": "Verde."
+      },
+      {
+        "id": "c",
+        "text": "Amarillo."
+      },
+      {
+        "id": "d",
+        "text": "Blanco."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "El color de las marcas para indicar zonas de ejercicios militares es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Amarillo sobre negro."
+      },
+      {
+        "id": "b",
+        "text": "Amarillo."
+      },
+      {
+        "id": "c",
+        "text": "Negro sobre amarillo."
+      },
+      {
+        "id": "d",
+        "text": "Negro con una ancha banda horizontal amarilla."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "La marca de tope de una \"Marca de Peligro Aislado\" está formada por:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Una esfera roja."
+      },
+      {
+        "id": "b",
+        "text": "Un aspa amarilla, en forma de X."
+      },
+      {
+        "id": "c",
+        "text": "Dos conos negros superpuestos opuestos por sus bases."
+      },
+      {
+        "id": "d",
+        "text": "Dos esferas negras superpuestas."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "Las marcas cardinales:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Son diferentes dependiendo de la región."
+      },
+      {
+        "id": "b",
+        "text": "Son iguales en forma en ambas regiones, aunque su uso es diferente."
+      },
+      {
+        "id": "c",
+        "text": "Tienen el mismo uso, pero son de forma diferente dependiendo de si la región es A o B."
+      },
+      {
+        "id": "d",
+        "text": "Son las mismas en ambas regiones."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "En el punto de bifurcación de un canal, siguiendo el sentido convencional de balizamiento, se puede indicar el canal principal mediante una marca lateral de babor o estribor modificada. En la región A, si el canal principal está a estribor, la marca es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "De forma cónica, de castillete o espeque."
+      },
+      {
+        "id": "b",
+        "text": "Roja con una banda ancha horizontal verde."
+      },
+      {
+        "id": "c",
+        "text": "Amarilla con una banda ancha horizontal roja."
+      },
+      {
+        "id": "d",
+        "text": "Cilíndrica, de castillete o espeque y verde con una banda ancha horizontal roja."
+      }
+    ],
+    "correctAnswerId": "b"
+  },
+  {
+    "topicId": "balizamiento",
+    "topicName": "Balizamiento",
+    "statement": "La forma de las boyas que indican zonas reservadas al recreo es:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Esférica, también de castillete o espeque con una marca de tope esférica."
+      },
+      {
+        "id": "b",
+        "text": "A elegir pero sin que pueda prestarse a confusión con las marcas laterales; son preferibles las formas de castillete o espeque."
+      },
+      {
+        "id": "c",
+        "text": "De libre elección, pero que no se preste a confusión con las marcas para ayuda a la navegación."
+      },
+      {
+        "id": "d",
+        "text": "De castillete o espeque."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Un buque solo debe navegar a velocidad de seguridad cuando haya tráfico o mala visibilidad."
+      },
+      {
+        "id": "b",
+        "text": "La velocidad de seguridad de una embarcación menor de 20 metros siempre es 4 nudos."
+      },
+      {
+        "id": "c",
+        "text": "La velocidad de seguridad es una característica fija del buque."
+      },
+      {
+        "id": "d",
+        "text": "La velocidad de seguridad depende de varios factores y varía en cada momento."
+      }
+    ],
+    "correctAnswerId": "d"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la Regla 23.d del RIPA, ¿qué buques podrán exhibir una luz blanca todo horizonte en lugar de las luces normales?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Buques de menos de 7 m y velocidad ≤ 7 nudos."
+      },
+      {
+        "id": "b",
+        "text": "Buques de menos de 9 m y velocidad ≤ 9 nudos."
+      },
+      {
+        "id": "c",
+        "text": "Buques de menos de 15 m y velocidad ≤ 12 nudos."
+      },
+      {
+        "id": "d",
+        "text": "Buques de menos de 12 m."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la Regla 34.c del RIPA, cuando un buque va a ser alcanzado en canal angosto, indicará su conformidad mediante:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Una pitada larga, una corta y una larga."
+      },
+      {
+        "id": "b",
+        "text": "Dos pitadas largas consecutivas."
+      },
+      {
+        "id": "c",
+        "text": "Una pitada larga, una corta, una larga y una corta."
+      },
+      {
+        "id": "d",
+        "text": "Una pitada larga seguida de tres cortas."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la Regla 2.a del RIPA, no se eximirá a un buque o a su capitán de las consecuencias de negligencia:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "En ninguna disposición del presente Reglamento."
+      },
+      {
+        "id": "b",
+        "text": "Salvo en aquellas disposiciones que específicamente así lo establezcan."
+      },
+      {
+        "id": "c",
+        "text": "Salvo en las disposiciones que regulen casos de emergencia."
+      },
+      {
+        "id": "d",
+        "text": "Salvo en los casos previstos en la parte C."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "De acuerdo con el Anexo IV del RIPA, es una señal de peligro emitida por radiotelefonía la palabra:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "MAYDAY."
+      },
+      {
+        "id": "b",
+        "text": "NC."
+      },
+      {
+        "id": "c",
+        "text": "SECURITE."
+      },
+      {
+        "id": "d",
+        "text": "PAN PAN."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Conforme a la Regla 20.a del RIPA, las reglas sobre luces y marcas deberán cumplirse:",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "En todas las condiciones meteorológicas."
+      },
+      {
+        "id": "b",
+        "text": "Únicamente en caso de niebla o poca visibilidad."
+      },
+      {
+        "id": "c",
+        "text": "Desde la puesta del sol hasta su salida exclusivamente."
+      },
+      {
+        "id": "d",
+        "text": "Son de carácter voluntario."
+      }
+    ],
+    "correctAnswerId": "a"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
+    "respuestas": [
+      {
+        "id": "a",
+        "text": "Las señales de peligro deben utilizarse juntas."
+      },
+      {
+        "id": "b",
+        "text": "Deben utilizarse por separado."
+      },
+      {
+        "id": "c",
+        "text": "Pueden utilizarse juntas o por separado."
+      },
+      {
+        "id": "d",
+        "text": "El RIPA no indica cómo utilizarlas."
+      }
+    ],
+    "correctAnswerId": "c"
+  },
+  {
+    "topicId": "reglamento_abordajes",
+    "topicName": "Reglamento (RIPA)",
+    "statement": "Según la Regla 3 del RIPA, la palabra \"buque\" designa:",
+    "resp
