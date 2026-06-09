@@ -52,7 +52,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Como práctica habitual, una embarcación con un solo ancla se aproximará a la zona de fondeo:",
     "respuestas": [
@@ -65,7 +65,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "¿Qué entendemos por gaza?",
     "respuestas": [
@@ -78,7 +78,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Para contactar con Salvamento Marítimo, ¿de que forma realizaremos la llamada?",
     "respuestas": [
@@ -91,7 +91,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En la estabilidad estática transversal el equilibrio se alcanza cuando:",
     "respuestas": [
@@ -104,7 +104,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Para evitar un excesivo balance, la mejor medida a tomar es:",
     "respuestas": [
@@ -117,7 +117,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Los efectos de navegar en aguas someras son, entre otros:",
     "respuestas": [

@@ -8200,8 +8200,8 @@ const questions = [
     "correctAnswerId": ""
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "emergencias_mar",
+    "topicName": "Emergencias en la mar",
     "statement": "¿Cuándo abandonaremos la embarcación?",
     "answers": [
       {
@@ -8221,11 +8221,11 @@ const questions = [
         "text": "Sólo cuando tengamos la certeza de que otro barco nos está viendo."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "En el Hemisferio Norte, ¿cuál es la trayectoria de las borrascas?",
     "answers": [
       {
@@ -8245,11 +8245,11 @@ const questions = [
         "text": "De Este a Suroeste."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "Virazón es:",
     "answers": [
       {
@@ -8269,11 +8269,11 @@ const questions = [
         "text": "Cuando el viento, originado por diferencia de temperaturas y por lo tanto de presiones, cambia de dirección continuamente."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "Cuál de las siguientes afirmaciones NO es correcta:",
     "answers": [
       {
@@ -8293,11 +8293,11 @@ const questions = [
         "text": "En una borrasca en el Hemisferio Norte, el aire se mueve en sentido contrario a las agujas del reloj."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "El viento rola cuando:",
     "answers": [
       {
@@ -8317,11 +8317,11 @@ const questions = [
         "text": "La embarcación maniobra."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "En relación a las cartas de navegación costera, ¿qué es un cartucho?",
     "answers": [
       {
@@ -8341,11 +8341,11 @@ const questions = [
         "text": "Son cartas de puertos deportivos, sin tráfico comercial."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "Cuando decimos que el viento es NE, quiere decir:",
     "answers": [
       {
@@ -8365,11 +8365,11 @@ const questions = [
         "text": "Es un viento que nos entra desde 225º."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "¿Qué significa la abreviatura (Co) que muestra la carta náutica respecto al tipo de fondo?",
     "answers": [
       {
@@ -8389,11 +8389,11 @@ const questions = [
         "text": "Cascajo."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "¿Cuál de los siguientes elementos es una parte de la aguja náutica?",
     "answers": [
       {
@@ -8413,11 +8413,11 @@ const questions = [
         "text": "Matraz."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "teoria_navegacion",
+    "topicName": "Teoría de la navegación",
     "statement": "¿Es posible actualizar la declinación magnética?",
     "answers": [
       {
@@ -8437,11 +8437,11 @@ const questions = [
         "text": "Sí, es posible y para ello consultaremos los datos del Instituto Hidrográfico Español, con la referencia de la carta en cuestión."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "b"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "De las siguientes coordenadas, ¿cuál es la que más se aproxima a la marca cardinal Este situada al sur de Barbate?",
     "answers": [
       {
@@ -8461,11 +8461,11 @@ const questions = [
         "text": "36° 09’ N 005° 55,3’W"
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "¿Cuál es la distancia entre los faros de Punta Paloma y Punta Malabata?",
     "answers": [
       {
@@ -8485,11 +8485,11 @@ const questions = [
         "text": "36,5 millas náuticas."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "carta_navegacion",
+    "topicName": "Carta de navegación",
     "statement": "Nos encontramos en la oposición entre el faro de Punta Europa con el faro de Punta Carnero, viendo por nuestra aleta de estribor Gibraltar, obtenemos una Demora de aguja al faro de Punta Carnero = 255º, ¿Cuál será la corrección total más aproximada de las siguientes respuestas?",
     "answers": [
       {
@@ -8509,11 +8509,11 @@ const questions = [
         "text": "255° +"
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
     "statement": "Si una embarcación tiene asiento negativo:",
     "answers": [
       {
@@ -8533,11 +8533,11 @@ const questions = [
         "text": "El puntal es menor que el calado a popa."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
     "statement": "A la acción de largar cadena para fondear la embarcación, se la denomina también:",
     "answers": [
       {
@@ -8557,11 +8557,11 @@ const questions = [
         "text": "Zarpar."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "c"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
     "statement": "¿Cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
       {
@@ -8581,11 +8581,11 @@ const questions = [
         "text": "De forma general, una embarcación adrizada tendrá una escora nula."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "nomenclatura_nautica",
+    "topicName": "Nomenclatura náutica",
     "statement": "¿Cuál de las siguientes afirmaciones NO es CORRECTA?",
     "answers": [
       {
@@ -8605,7 +8605,7 @@ const questions = [
         "text": "Las hélices de palas abatibles suelen utilizarse para reducir el rozamiento durante la navegación a vela."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
     "topicId": "perfeb_21",
@@ -9232,8 +9232,8 @@ const questions = [
     "correctAnswerId": ""
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "¿Qué significa “rolar”?",
     "answers": [
       {
@@ -9253,7 +9253,7 @@ const questions = [
         "text": "Decrecer la fuerza del viento."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "a"
   },
   {
     "topicId": "perfeb_21",
@@ -9280,8 +9280,8 @@ const questions = [
     "correctAnswerId": ""
   },
   {
-    "topicId": "perfeb_21",
-    "topicName": "PER feb 21",
+    "topicId": "meteorologia",
+    "topicName": "Meteorología",
     "statement": "¿Cómo es la trayectoria de las borrascas en el Hemisferio Norte?",
     "answers": [
       {
@@ -9301,7 +9301,7 @@ const questions = [
         "text": "Las bajas presiones llevan una trayectoria de Oeste a Este."
       }
     ],
-    "correctAnswerId": ""
+    "correctAnswerId": "d"
   },
   {
     "topicId": "perfeb_21",

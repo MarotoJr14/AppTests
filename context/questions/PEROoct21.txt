@@ -52,7 +52,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Si queremos afirmar el chicote de un cabo a una bita, terminando con cote de seguridad, ¿qué nudo utilizaremos?",
     "respuestas": [
@@ -65,7 +65,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "¿Qué es un bichero?",
     "respuestas": [
@@ -91,7 +91,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Es obligatoria la instalación de un reflector radar en una embarcación de recreo que navegue en zonas 5, 6 o 7?",
     "respuestas": [
@@ -104,7 +104,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En aguas someras:",
     "respuestas": [
@@ -117,7 +117,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes NO es una medida a tomar antes de salir a la mar?",
     "respuestas": [
@@ -221,7 +221,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 6 del RIPA, para determinar la velocidad de seguridad NO se tendrá en cuenta:",
     "respuestas": [
@@ -234,7 +234,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "rireglamento_abordajespa",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 23.c del RIPA, la luz roja centelleante todo horizonte de gran intensidad se exhibirá:",
     "respuestas": [
@@ -247,7 +247,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 19 del RIPA, conducta de los buques en condiciones de visibilidad reducida:",
     "respuestas": [
@@ -260,7 +260,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 35.b del RIPA, un buque de propulsión mecánica en navegación, pero parado y sin arrancada, emitirá a intervalos que no excedan de dos minutos:",
     "respuestas": [
@@ -273,7 +273,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 34.a del RIPA, un buque de propulsión mecánica en navegación que esté a la vista de otro, ¿qué señal o señales emitirá con el pito para indicar que \"está dando atrás\"?",
     "respuestas": [
@@ -286,7 +286,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 9 del RIPA, los buques que naveguen a lo largo de un paso o canal angosto, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "respuestas": [
@@ -312,7 +312,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 7 del RIPA, riesgo de abordaje, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "respuestas": [
@@ -325,7 +325,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 17 del RIPA, maniobra del buque que sigue a rumbo, cuando uno de los dos buques deba mantenerse apartado de la derrota del otro, este ultimo:",
     "respuestas": [
@@ -338,7 +338,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque:",
     "respuestas": [

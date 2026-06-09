@@ -52,7 +52,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "El nudo ballestrinque se emplea para:",
     "respuestas": [
@@ -65,7 +65,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuando un barco está fondeado y gira tomando como centro el ancla y como radio la cadena, el barco y la cadena describirán lo que se conoce como:",
     "respuestas": [
@@ -78,7 +78,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué parámetro varia de forma más significativa al variar la estabilidad longitudinal?",
     "respuestas": [
@@ -91,7 +91,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Cuál de las siguientes maniobras se debe realizar inmediatamente cuando vemos a una persona caer al agua?",
     "respuestas": [
@@ -104,7 +104,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Señale la afirmación VERDADERA:",
     "respuestas": [
@@ -117,7 +117,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué es un reflector RADAR?",
     "respuestas": [
@@ -221,7 +221,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 33.a del RIPA, la campana o el gong, o ambos, podrán:",
     "respuestas": [
@@ -234,7 +234,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 37 del RIPA, cuando un buque esté en peligro y requiera ayuda, utilizará o exhibirá la siguiente señal descrita en su Anexo IV:",
     "respuestas": [
@@ -247,7 +247,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 13 del RIPA, todo buque que alcance a otro:",
     "respuestas": [
@@ -260,7 +260,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 35.e del RIPA, en las proximidades o dentro de una zona de visibilidad reducida, un buque remolcado o, si se remolca más de uno, solamente el último del remolque, caso de ir tripulado:",
     "respuestas": [
@@ -273,7 +273,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 18.b del RIPA, los buques de vela, en navegación, se mantendrán apartados de la derrota de:",
     "respuestas": [
@@ -286,7 +286,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Conforme a la Regla 3 del RIPA, la expresión 'en navegación' define a un buque que:",
     "respuestas": [
@@ -299,7 +299,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 34.b.iii del RIPA, cuando se lleve, la luz utilizada para las señales de maniobra y advertencia será:",
     "respuestas": [
@@ -312,7 +312,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo con la Regla 24.a.i del RIPA, todo buque de propulsión mecánica cuando remolque a otro exhibirá tres luces de tope a proa, según una línea vertical:",
     "respuestas": [
@@ -325,7 +325,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Conforme a la Regla 30 del RIPA, los buques fondeados exhibirán en el lugar más visible:",
     "respuestas": [
@@ -338,7 +338,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 3 del RIPA - Definiciones generales, la palabra \"buque\" NO designa a:",
     "respuestas": [

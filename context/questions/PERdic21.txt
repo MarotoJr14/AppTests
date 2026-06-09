@@ -52,7 +52,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuál de las siguientes afirmaciones relativas al fondeo es INCORRECTA?",
     "respuestas": [
@@ -65,7 +65,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "elementos_amarre_fondeo",
+    "topicId": "amarre_fondeo",
     "topicName": "Elementos de amarre y fondeo",
     "statement": "Cuál de las siguientes afirmaciones es CORRECTA?",
     "respuestas": [
@@ -78,7 +78,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Ante una emergencia, ¿cuál es la forma de contactar con Salvamento Marítimo?",
     "respuestas": [
@@ -91,7 +91,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "En una embarcación de recreo, al aumentar los pesos en cubierta:",
     "respuestas": [
@@ -104,7 +104,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "Navegando con la mar por proa, modificar la velocidad es la forma más eficaz de:",
     "respuestas": [
@@ -117,7 +117,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "seguridad",
+    "topicId": "seguridad_mar",
     "topicName": "Seguridad",
     "statement": "¿Qué señales pirotécnicas debe llevar reglamentariamente una embarcación que esté autorizada a navegar en zona 4 hasta 12 millas de la costa?",
     "respuestas": [
@@ -221,7 +221,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 16 del RIPA, maniobra del buque que cede el paso, todo buque que esté obligado a mantenerse apartado de la derrota de otro buque:",
     "respuestas": [
@@ -234,7 +234,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 18 del RIPA, obligaciones entre categorías de buques, sin perjuicio de lo dispuesto en otras reglas, los buques dedicados a la pesca, en navegación, se mantendrán apartados de la derrota de:",
     "respuestas": [
@@ -247,7 +247,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 7 del RIPA, para determinar si existe riesgo de abordaje, se tendrán en cuenta, entre otras, las siguientes consideraciones:",
     "respuestas": [
@@ -260,7 +260,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 14 del RIPA, cuando dos buques de propulsión mecánica naveguen de vuelta encontrada a rumbos opuestos o casi opuestos, con riesgo de abordaje:",
     "respuestas": [
@@ -273,7 +273,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según el anexo IV del RIPA, ¿cuál de las siguientes señales indica peligro y necesidad de ayuda?",
     "respuestas": [
@@ -286,7 +286,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 24.a.v) del RIPA, cuando un buque de propulsión mecánica que remolque a otro exhiba una marca bicónica en el lugar más visible, significará que:",
     "respuestas": [
@@ -299,7 +299,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "De acuerdo a la Regla 19 del RIPA, salvo en los casos en que se haya comprobado que no existe riesgo de abordaje, todo buque que oiga, al parecer a proa de su través, la señal de niebla de otro buque:",
     "respuestas": [
@@ -312,7 +312,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 8 del RIPA, maniobras para evitar el abordaje, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "respuestas": [
@@ -325,7 +325,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 10 del RIPA, los buques que utilicen un dispositivo de separación del tráfico deberán, siempre que puedan, evitar:",
     "respuestas": [
@@ -338,7 +338,7 @@
     "createdAt": ""
   },
   {
-    "topicId": "ripa",
+    "topicId": "reglamento_abordajes",
     "topicName": "Reglamento (RIPA)",
     "statement": "Según la Regla 2 del RIPA, respecto de la responsabilidad derivada de negligencias en el cumplimiento del Reglamento, este indica que:",
     "respuestas": [
