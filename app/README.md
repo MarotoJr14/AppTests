@@ -101,8 +101,8 @@ npm install -g firebase-tools
 firebase login
 
 # Desde la raíz del proyecto
-firebase deploy --only firestore:rules
-firebase deploy --only firestore:indexes
+firebase deploy --only firestore:rules --project blue-sailing-test-8a843
+firebase deploy --only firestore:indexes --project blue-sailing-test-8a843
 ```
 
 ### 4. Poblar la base de datos (seed)
@@ -113,13 +113,15 @@ npm install firebase-admin
 
 # Descarga tu service account desde Firebase Console →
 # Configuración del proyecto → Cuentas de servicio → Generar clave
-# Guárdala como firestore/serviceAccount.json
+# Guárdala como firestore/blue-sailing-test-8a843-firebase-adminsdk-fbsvc-bdc46616f3.json
 
-node seed_firestore.js
+node seed_topics.js
+node seed_questions.js
+node seed_codes.js
 ```
 
-El script escribe los 11 temas y un conjunto de preguntas de ejemplo.
-**Añade tu banco completo de preguntas** siguiendo la misma estructura en `seed_firestore.js`.
+Los scripts escriben los temas, preguntas y códigos de registro en el proyecto `blue-sailing-test-8a843`.
+**Añade tu banco completo de preguntas** directamente en `seed_questions.js`, respetando la estructura existente.
 
 ### 5. Ejecutar la app
 

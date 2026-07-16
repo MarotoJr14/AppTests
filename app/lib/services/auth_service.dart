@@ -197,8 +197,7 @@ class AuthService {
             tx: tx,
             lockRef: lockRef,
             emailNorm: emailNorm,
-            now: now,
-            currentAttempts: failedAttempts,
+            now: now, currentAttempts: failedAttempts,
           );
           throw const AuthException('Este código no está asignado a tu correo.');
         }

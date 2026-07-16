@@ -39,7 +39,7 @@ service cloud.firestore {
       allow write: if isAuth() && request.resource.data.userId == request.auth.uid;
     }
 
-    // ✅ Registration codes (used before login)
+    // Registration codes (used before login)
     // Doc id = code (e.g. "ABCD1234")
     // Fields:
     //  - code: string
@@ -120,7 +120,7 @@ service cloud.firestore {
         );
     }
 
-    // ✅ Per-email lock (3 bad codes => 5 min lock)
+    // Per-email lock (3 bad codes => 5 min lock)
     // Doc id = normalized email (lowercase)
     // Fields:
     //  - email: string

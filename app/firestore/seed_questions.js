@@ -5,7 +5,7 @@
 // Place your Firebase service account JSON as serviceAccount.json in this folder.
 
 const admin = require('firebase-admin');
-const serviceAccount = require('./blue-sailing-test-firebase-adminsdk-fbsvc-dadd2dc472.json');
+const serviceAccount = require('./blue-sailing-test-8a843-firebase-adminsdk-fbsvc-bdc46616f3.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -136,8 +136,8 @@ const questions = [
     "correctAnswerId": "d"
   },
   {
-    "topicId": "",
-    "topicName": "Elemeamarre_fondeontos de amarre y fondeo",
+    "topicId": "amarre_fondeo",
+    "topicName": "Elementos de amarre y fondeo",
     "statement": "En relación al fondeo, ¿cuál de las siguientes afirmaciones es CORRECTA?",
     "answers": [
       {
@@ -7722,7 +7722,7 @@ const questions = [
   {
     "topicId": "legislacion",
     "topicName": "Legislación",
-    "statement": "Las embarcaciones deportivas en el interior de los puertos y sus canales de acceso:"
+    "statement": "Las embarcaciones deportivas en el interior de los puertos y sus canales de acceso:",
     "answers": [
       {
         "id": "a",
@@ -7938,7 +7938,7 @@ const questions = [
   {
     "topicId": "reglamento_abordajes",
     "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
-    "statement": "Según la Regla 12.a.i) del RIPA, cuando dos buques de vela que se encuentren a la vista se aproximen uno al otro con riesgo de abordaje, y cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor:"
+    "statement": "Según la Regla 12.a.i) del RIPA, cuando dos buques de vela que se encuentren a la vista se aproximen uno al otro con riesgo de abordaje, y cada uno de ellos reciba el viento por bandas contrarias, el que lo reciba por estribor:",
     "answers": [
       {
         "id": "a",
@@ -7962,7 +7962,7 @@ const questions = [
   {
     "topicId": "reglamento_abordajes",
     "topicName": "Reglamento Internacional para Prevenir los Abordajes en la Mar (RIPA)",
-    "statement": "En caso de peligro y de que necesitemos ayuda:"
+    "statement": "En caso de peligro y de que necesitemos ayuda:",
     "answers": [
       {
         "id": "a",
@@ -9109,7 +9109,7 @@ const questions = [
         "text": "En la parte de proa, una luz roja todo horizonte o una marca bicónica; y en la popa, o cerca de ella, y a una altura inferior a la de la luz prescrita en el apartado , una luz blanca todo horizonte."
       }
     ],
-    "correctAnswerId": "C"
+    "correctAnswerId": "c"
   },
   {
     "topicId": "maniobra_navegacion",
@@ -41822,30 +41822,6 @@ const questions = [
       }
     ],
     "correctAnswerId": "c"
-  },
-  {
-    "topicId": "seguridad_mar",
-    "topicName": "Seguridad en la mar",
-    "statement": "En la zona de navegación 5 se debe llevar:",
-    "answers": [
-      {
-        "id": "a",
-        "text": "Ningún aro salvavidas."
-      },
-      {
-        "id": "b",
-        "text": "1 aro salvavidas."
-      },
-      {
-        "id": "c",
-        "text": "2 aros salvavidas."
-      },
-      {
-        "id": "d",
-        "text": "1 balsa salvavidas."
-      }
-    ],
-    "correctAnswerId": "b y d"
   },
   {
     "topicId": "seguridad_mar",

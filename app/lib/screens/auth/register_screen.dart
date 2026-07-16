@@ -52,10 +52,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
       }
     } on FirebaseAuthException catch (e) {
       setState(() => _error = _mapAuthError(e.code));
+      print('DEBUG: FirebaseAuthException - ${e.code}: ${e.message}');
     } on AuthException catch (e) {
       setState(() => _error = e.message);
+      print('DEBUG: AuthException - ${e.message}');
     } catch (e) {
       setState(() => _error = 'Error inesperado. Inténtalo de nuevo.');
+      print('DEBUG: Unexpected error - ${e.runtimeType}: $e');
     } finally {
       if (mounted) setState(() => _loading = false);
     }

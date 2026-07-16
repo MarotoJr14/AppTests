@@ -45,7 +45,10 @@ app.*.map.json
 /android/app/release
 
 # Firebase sensitive files
-firestore/serviceAccount.json
+# Base de datos Maroto
 firestore/blue-sailing-test-firebase-adminsdk-fbsvc-dadd2dc472.json
+# Base de datos Newthink
+firestore/blue-sailing-test-8a843-firebase-adminsdk-fbsvc-bdc46616f3.json
+# General
 firestore/node_modules/
 firestore/package-lock.json

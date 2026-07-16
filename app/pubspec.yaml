@@ -27,9 +27,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.10.0
 
 flutter:
   uses-material-design: true
   assets:
     - assets/images/
     - assets/icons/
+    - assets/blue_sailing_logo_fondo.png
+
+# Launcher icon configuration (use `flutter pub run flutter_launcher_icons:main`)
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/blue_sailing_logo_fondo.png

@@ -1,6 +1,6 @@
 {
   "projects": {
-    "AppTests": "apptests-964e1"
+    "default": "blue-sailing-test-8a843"
   },
   "targets": {},
   "etags": {}

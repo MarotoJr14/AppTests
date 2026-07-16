@@ -50,19 +50,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCzJGJIMscqiDK1maYUaC_fvGFEv4fBb2A',
-    appId: '1:62592433060:android:11d545010b24400e131f31',
-    messagingSenderId: '62592433060',
-    projectId: 'apptests-964e1',
-    storageBucket: 'apptests-964e1.firebasestorage.app',
+    apiKey: 'AIzaSyCJTH29kMY479SogKQh3fQUJzPgUvub1PY',
+    appId: '1:607915335501:android:130b08d867ea5382132104',
+    messagingSenderId: '607915335501',
+    projectId: 'blue-sailing-test-8a843',
+    databaseURL: 'https://blue-sailing-test-8a843-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'blue-sailing-test-8a843.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyABX8rH1gZgc8FwgKUwwwXdzByV7CfDlgs',
-    appId: '1:62592433060:ios:6fbf1d3cc0fa0af4131f31',
-    messagingSenderId: '62592433060',
-    projectId: 'apptests-964e1',
-    storageBucket: 'apptests-964e1.firebasestorage.app',
+    apiKey: 'AIzaSyChcH2OudJgOuKD7zGR8IYAqOKLbXqxWJk',
+    appId: '1:607915335501:ios:3cd52ffb7129e06a132104',
+    messagingSenderId: '607915335501',
+    projectId: 'blue-sailing-test-8a843',
+    databaseURL: 'https://blue-sailing-test-8a843-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'blue-sailing-test-8a843.firebasestorage.app',
     iosBundleId: 'com.app.app',
   );
 }
